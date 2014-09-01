@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+$blue: #0c69b6;
+$grey: #f0f0f0;
+$top_nav_height: 70px;
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.header{
+	width:100%;
+	background-color:$grey;
+}
+.top_nav{
+	min-height: $top_nav_height;
+	ul {margin:0;}
+	li {
+		list-style-type:none;
+		font-size:20px;
+		color:$blue;
+		display:inline;
+		margin-right:50px;
+		height: $top_nav_height;
+	    line-height: $top_nav_height;
+	}
+	span.glyphicon {
+		font-size:15px;
+	}
+	.glyphicon { margin-right:15px;}
+	
+}

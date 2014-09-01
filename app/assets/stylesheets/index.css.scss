@@ -1,0 +1,9 @@
+html body section#default{ 
+  background: url( image_path('bg_top.jpg')) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position:center top;
+  height: 400px;
+}
