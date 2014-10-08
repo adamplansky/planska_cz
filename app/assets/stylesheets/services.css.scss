@@ -1,0 +1,28 @@
+$darkblue: #465a7a;
+$darkgrey: #e4e4e4;
+$lightgrey: #f3f3f3;
+
+section{
+  article{
+    .header{
+      text-transform:uppercase;
+      background-color:$darkblue;
+      color:#fff;
+      text-align:left;
+      font-size:27px;
+      padding:10px;
+    }
+    
+    .body{
+      text-align:left;
+      color:$darkblue;
+      background-color:$lightgrey;
+      ul{
+        padding-top:10px;
+        li{
+          padding:5px;
+        }
+      }
+    }
+  }
+}

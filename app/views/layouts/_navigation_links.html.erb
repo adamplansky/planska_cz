@@ -1,7 +1,7 @@
 <%# add navigation links to this file %>
 <li><%= link_to 'Profil', root_path %></li>
-<li><%= link_to 'Nabídka služeb', page_path('about') %></li>
-<li><a href="/">Ceník</a></li>
-<li><a href="/">Odkazy</a></li>
+<li><%= link_to 'Nabídka služeb', page_path('services') %></li>
+<li><%= link_to 'Ceník', page_path('pricelist')%></li>
+<li><%= link_to 'Odkazy', page_path('links')%></li>
 <li><a href="/">Relax</a></li>
-<li><a href="/">Kontakt</a></li>
+<li><%= link_to "Kontakt", new_contact_path %></li>

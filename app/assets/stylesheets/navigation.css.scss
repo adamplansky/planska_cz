@@ -1,4 +1,5 @@
 $blue: #0c69b6;
+$dark-blue: #465a7a;
 $grey: #f0f0f0;
 $navbar-height: 40px;
 
@@ -9,8 +10,8 @@ $navbar-height: 40px;
 	background-color:#fff;
 	border-radius:0px;
 	border:0;
-	.navbar-brand, .navbar-brand:hover {color:$blue;}
-	.navbar-nav > li > a,	.navbar-nav > li > a:hover {color:$blue;}
+	.navbar-brand, .navbar-brand:hover {color:$dark-blue;}
+	.navbar-nav > li > a,	.navbar-nav > li > a:hover {color:$dark-blue;}
 }
 section#default{margin:0;width:100%;}
 .navbar-nav > li > a, .navbar-brand{

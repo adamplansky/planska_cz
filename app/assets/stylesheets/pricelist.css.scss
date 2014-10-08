@@ -1,0 +1,36 @@
+$darkblue: #465a7a;
+$darkgrey: #e4e4e4;
+$lightgrey: #f3f3f3;
+
+.pricelist{
+  table{
+    width:100%;
+    text-align:left;
+    text-transform:uppercase;
+    th{
+      background-color:$darkblue;
+      color:#fff;
+      font-weight:200;
+      font-size:20px;
+      padding:7px;
+    }
+    td[colspan="2"]{
+      color:red;
+      padding:3px 0 3px 10px;
+      background-color:$darkgrey;
+      color:$darkblue;
+      font-weight:600;
+    }
+    td{
+      text-transform:none;
+      background-color: $lightgrey;
+      padding:3px 3px 3px 20px;
+    }
+    td + td{
+      text-align:right;
+    }
+    tr{
+      border:1px solid #fff;
+    }
+  }
+}

@@ -1,3 +1,7 @@
+$blue: #0c69b6;
+$dark-blue: #465a7a;
+$grey: #f0f0f0;
+
 html body section#default{ 
   background: url( image_path('bg_top.jpg')) no-repeat;
   -webkit-background-size: cover;
@@ -6,4 +10,89 @@ html body section#default{
   background-size: cover;
   background-position:center top;
   height: 400px;
+}
+.header-img-inner{
+	top:65px;
+	position:relative;
+	height:100%;
+	text-transform:uppercase;
+	h1,h2{
+		letter-spacing:-0.0625em;
+		left: 20%;
+		position:relative;
+		margin:0;
+ 	    display:inline-block;
+		color:#fff;
+		padding:7px;
+		font-weight:bold;
+	}
+	h1{ 
+		font-size: 65px;
+		background-color:rgba(40,61,93, 0.8);
+//    color:rgba(40,61,93, 1);
+    //background-color:rgba(255,255,255,0.7);
+		margin-bottom:20px;
+		padding:10px 20px;
+	}
+	h2{
+		font-size: 25px;	
+    
+		background-color:rgba(40,61,93, 0.5);
+		margin-bottom:5px;
+	}
+  h1,h2{
+    //  color:rgba(40,61,93, 1);
+     // background-color:rgba(255,255,255,0.7)
+  }
+}
+main section{ 
+	margin:0;
+	padding:10px 30px;
+	h3{
+		letter-spacing:-0.0625em;
+		font-weight:bold;
+		font-size:50px;
+		color:$dark-blue;
+		text-align:center;
+		margin-bottom:30px;
+	}
+  article{
+    text-align:center;
+  }
+}
+#dane{
+	article{	
+		background-color:$dark-blue;
+		font-size:35px;
+		color:#fff; 
+		font-weight:300;
+		text-align:center;
+		padding:20px;
+	}
+	background-color:$dark-blue;
+	margin:0;
+}
+#submenu article section{
+	padding:0 10px;
+	h4
+	{
+		text-transform:uppercase;
+		font-weight:normal;
+		color:#474747;
+		font-size:35px;
+	}
+	section
+	{
+		background-color:#ddd;
+		padding:10px 0 10px 20px;
+	}
+	.glyphicon-chevron-right {
+		font-size: 6px;
+		font-weight: 100;
+		margin-right: 5px;
+		top:-2px;
+	}
+	li{margin-bottom:5px;}
+	li a{font-size:16px;color:#474747;}
+	ul {list-style-type:none;padding:0;}
 }

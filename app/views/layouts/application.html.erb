@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Planska Cz" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Planska Cz" %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <header>
-      <%= render 'layouts/top_navigation' %>
-      <%= render 'layouts/navigation' %>
-    </header>
-	 <%= yield %>
-  
-  </body>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= content_for?(:title) ? yield(:title) : "Planska Cz" %></title>
+	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Planska Cz" %>">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<%= render 'layouts/top_navigation' %>
+		<%= render 'layouts/navigation' %>
+	</header>
+	<main role="main">
+		<%= render 'layouts/messages' %>
+    
+    <section id="default" data-type="background">
+    	<section class="header-img-inner .col-sm-6">
+    		<h1>Jitka Plánská</h1><br />
+    		<h2>účetnictví. daňová evidence</h2><br />
+    		<h2>mzdy, poradenství</h2>
+    	</section>
+    </section>
+    
+    
+		<%= yield %>
+	</main>
+	<footer>
+		<%= render 'layouts/footer' %>		
+	</footer>
+</body>
 </html>

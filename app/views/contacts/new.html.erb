@@ -1,0 +1,30 @@
+<% content_for :title do %>Kontakt<% end %>
+
+<section class="contacts">
+  <h3>Kontakt</h3>
+  <article>
+	  <section class="col-sm-6">
+      <h4>Zašlete mi zprávu</h4>
+      <%= form_for @contact do |f| %>
+      <div class="form-group">
+         <%= f.label :name, "Vaše jméno:" %>
+         <%= f.text_field :name, class: "form-control" %>
+       </div>
+       <div class="form-group">
+          <%= f.label :email, "Váš email:" %>
+          <%= f.text_field :email, class: "form-control" %>
+        </div>
+       
+       <div class="form-group">
+          <%= f.label :message, "Vaše zpráva:" %>
+          <%= f.text_field :message, class: "form-control" %>
+        </div>
+       
+        <%= f.submit "odeslat", class: "btn btn-default" %>
+      <% end %>
+    
+    
+    </section>
+	  <section class="col-sm-6"><h4>Kontaktní informace</h4></section>
+  </article>
+</section>

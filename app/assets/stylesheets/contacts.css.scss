@@ -1,0 +1,17 @@
+$darkblue: #465a7a;
+$darkgrey: #e4e4e4;
+$lightgrey: #f3f3f3;
+$normalgrey: #7b7b7b;
+
+section.contacts{
+  article{
+    section{
+      h4{
+        text-transform:uppercase;
+        color:$normalgrey;
+        font-size:30px;
+        text-align:left;
+      }
+    }
+  }
+}
