@@ -1,5 +1,6 @@
 $blue: #0c69b6;
 $dark-blue: #465a7a;
+$light-blue: #7c8ba0;
 $grey: #f0f0f0;
 
 html body section#default{ 
@@ -61,16 +62,18 @@ main section{
   }
 }
 #dane{
+	margin:0;
+  &, article{
+    background-color:$light-blue;
+  }
 	article{	
-		background-color:$dark-blue;
 		font-size:35px;
 		color:#fff; 
 		font-weight:300;
 		text-align:center;
 		padding:20px;
 	}
-	background-color:$dark-blue;
-	margin:0;
+
 }
 #submenu article section{
 	padding:0 10px;
