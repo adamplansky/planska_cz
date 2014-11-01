@@ -21,6 +21,8 @@ group :development do
   gem 'rails_layout'
   gem 'sqlite3'
 end
+
+
 group :production do
   gem 'pg'
   gem 'thin'

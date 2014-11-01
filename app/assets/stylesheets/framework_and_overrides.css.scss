@@ -1,3 +1,8 @@
+$blue: #0c69b6;
+$dark-blue: #465a7a;
+$light-blue: #7c8ba0;
+$grey: #f0f0f0;
+
 // import the CSS framework
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -48,4 +53,13 @@ article {
 section {
 	@extend .row;
 	margin-top: 20px;
+}
+body{
+  font-size:13px;
+}
+.navbar-inverse .navbar-toggle{
+  border-color:$dark-blue;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: $dark-blue;
 }
