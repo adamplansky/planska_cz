@@ -1,10 +1,18 @@
 <%# navigation styled for Bootstrap 3.0 %>
 <div class="header">
-    <div class="container top_nav">
+    <div class="container top_nav col-sm-6">
   	  <ul>
   		  <li><span class="glyphicon glyphicon-earphone"></span>+420 606 419 246</li>
   		  <li><span class="glyphicon glyphicon-envelope"></span>jitka@planska.cz</li>
   	  </ul>
+    </div>
+    <div class="top_nav pull-right col-sm-6">
+      <ul class="right_links">
+        <li><%= link_to 'Aktuálně', page_path('actually')%></li>
+        <li><%= link_to '2013', page_path('2013')%></li>
+        <li><%= link_to '2012', page_path('2012')%></li>
+        <li><%= link_to 'Archiv', page_path('archiv')%></li>
+      </ul>
     </div>
 </div>
 

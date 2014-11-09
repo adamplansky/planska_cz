@@ -24,19 +24,27 @@ body{
 }
 .header{
 	width:100%;
+  overflow:hidden;
 	background-color:$grey;
 }
-.top_nav{
+.top_nav {
 	min-height: $top_nav_height;
+	background-color:$grey;
+  .right_links{
+    text-align:right;
+  }
 	ul {margin:0;}
 	li {
 		list-style-type:none;
 		font-size:15px;
-		color:$blue;
+	
 		display:inline;
 		margin-right:50px;
-		height: $top_nav_height;
-	    line-height: $top_nav_height;
+    &, a, a:hover, a:focus, a:visited{
+    	color:$blue;
+		  height: $top_nav_height;
+      line-height: $top_nav_height;
+    }
 	}
 	span.glyphicon {
 		font-size:15px;
