@@ -3,6 +3,6 @@ class UserMailer < ActionMailer::Base
   
   def ask_email(user)
     @user = user
-    mail(from: user.email, :subject => "Jedemedobaru.cz dotaz")
+    mail(from: user.email, :subject => " :DOTAZ: z formulare na www.planska.cz")
   end  
 end
