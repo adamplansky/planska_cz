@@ -64,6 +64,24 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  config.action_mailer.smtp_settings = {
+    address:              Rails.application.secrets.email_smtp_server,
+    port:                 587,
+    domain:               'www.planska.cz',
+    user_name:            Rails.application.secrets.email_username,
+    password:             Rails.application.secrets.email_password,
+    authentication:       'plain',
+    enable_starttls_auto: true ,
+#    openssl_verify_mode: 'none'
+   }
+  
+  #ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'planska.herokuapp.com'}
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+
+
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
