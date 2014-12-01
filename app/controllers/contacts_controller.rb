@@ -8,8 +8,10 @@ class ContactsController < ApplicationController
     puts @contact.inspect
     if @contact.valid?
       UserMailer.ask_email(@contact).deliver
-      redirect_to root_path
+      flash[:notice] = "Zpráva odeslána!"
+     redirect_to :controller => 'contacts', :action => 'new'
     else
+      flash[:notice] = "Zprávu se nepodařilo odeslat!"
       render :new
     end
   end

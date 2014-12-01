@@ -2,6 +2,9 @@ $blue: #0c69b6;
 $dark-blue: #465a7a;
 $light-blue: #7c8ba0;
 $grey: #f0f0f0;
+$darkblue: #465a7a;
+$darkgrey: #e4e4e4;
+$lightgrey: #f3f3f3;
 
 // import the CSS framework
 @import "bootstrap-sprockets";
@@ -9,50 +12,50 @@ $grey: #f0f0f0;
 
 // make all images responsive by default
 img {
-	@extend .img-responsive;
-	margin: 0 auto;
+  @extend .img-responsive;
+  margin: 0 auto;
 }
 // override for the 'Home' navigation link
 .navbar-brand {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
 .column {
-	@extend .col-md-6;
-	@extend .text-center;
+  @extend .col-md-6;
+  @extend .text-center;
 }
 .form {
-	@extend .col-md-6;
+  @extend .col-md-6;
 }
 .form-centered {
-	@extend .col-md-6;
-	@extend .text-center;
+  @extend .col-md-6;
+  @extend .text-center;
 }
 .submit {
-	@extend .btn;
-	@extend .btn-primary;
-	@extend .btn-lg;
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
 }
 main{
-	@extend .container;
-	&[role=main]{
-		width:100%;
-	}
-	padding:0;
-//	background-color: #fff;
+  @extend .container;
+  &[role=main]{
+    width:100%;
+  }
+  padding:0;
+  //	background-color: #fff;
 }
 article {
-	@extend main;
-	letter-spacing:0px;
+  @extend main;
+  letter-spacing:0px;
 }
 
 
 section {
-	@extend .row;
-	margin-top: 20px;
+  @extend .row;
+  margin-top: 20px;
 }
 body{
   font-size:13px;
@@ -63,3 +66,74 @@ body{
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: $dark-blue;
 }
+.navbar-toggle{
+  background-color:#465A7A;
+}
+
+.format_table{
+  width:100%;
+  text-transform:uppercase;
+  th{
+    background-color:$darkblue;
+    color:#fff;
+    font-weight:200;
+    font-size:20px;
+    padding:7px;
+    text-align:center;
+  }
+  td[colspan="2"]{
+    color:red;
+    padding:3px 0 3px 10px;
+    background-color:$darkgrey;
+    color:$darkblue;
+    font-weight:600;
+  }
+  td{
+    text-transform:none;
+    background-color: $lightgrey;
+    padding:3px 3px 3px 20px;
+  }
+  tr{
+    text-align:center;
+    border:1px solid #fff;
+  }
+}
+.alert{
+  font-size:30px;
+  text-align:center;
+}
+.navbar-collapse{
+  .navbar-nav{
+    float:right;
+  }
+}
+@media screen and (max-width:768px) {
+  .navbar-right {
+    float:none !important;
+  }
+  .navbar-collapse{
+    .navbar-nav{
+      float:left; 
+    }
+  }
+  main section{
+    padding:0 !important;
+  }
+  .header-img-inner h1, .header-img-inner h2{
+    left:auto !important;
+  }
+  div.navbar-collapse ul{
+    width:100%;
+    padding:0 15px;
+    li{
+      border-bottom:1px solid $darkblue;
+      a{
+        text-align:center;
+      }
+    }
+  }
+  .header{
+    display:none;
+  }
+}
+
