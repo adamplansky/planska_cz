@@ -6,6 +6,7 @@
 	<title><%= content_for?(:title) ? yield(:title) : "www.planska.cz - účetní poradenství" %></title>
 	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Poskytujeme poradenství, zpracováváme účetnictví, daňovou evidenci, mzdovou agendu, přiznání k daním pro malé a střední firmy." %>">
    <meta name="author" content="Adam Plánský">
+   <meta name="robots" content="index,follow"> 
    <meta name="keywords" content="účetnictví, daňová evidence, Kralupy nad Vltavou, Kladno, účetní kancelář">
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
