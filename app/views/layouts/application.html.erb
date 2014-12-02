@@ -2,10 +2,11 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
 	<title><%= content_for?(:title) ? yield(:title) : "www.planska.cz - účetní poradenství" %></title>
-	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Poskytujeme poradenství, zpracováváme účetnictví, daňovou evidenci, mzdovou agendu, přiznání k daním pro malé a střední firmy, zastupujeme klienty na úřadech." %>">
+	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Poskytujeme poradenství, zpracováváme účetnictví, daňovou evidenci, mzdovou agendu, přiznání k daním pro malé a střední firmy." %>">
    <meta name="author" content="Adam Plánský">
-   <meta name="keywords" content="účetnictví, daňová evidence, mzdová agenda, Kralupy nad Vltavou, Kladno, účetní kancelář">
+   <meta name="keywords" content="účetnictví, daňová evidence, Kralupy nad Vltavou, Kladno, účetní kancelář">
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
