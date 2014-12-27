@@ -1,7 +1,9 @@
 
+
 <section>
 	<article>
 		<h3>VÍTEJTE NA STRÁNKÁCH<br /> ÚČETNÍ PORADKYNĚ JITKY PLÁNSKÉ</h3>
+    
 		<p>Účetní kancelář byla založena v roce 1995, nabízí proto mnohaleté zkušenosti. Oblast působnosti je především Kladno a Kladensko, Praha, Kralupy nad Vltavou a blízké okolí. Naše služby jsou určeny pro fyzické i právnické osoby.</p>
 		<p>Poskytujeme poradenství, zpracováváme účetnictví (dříve podvojné účetnictví), daňovou evidenci (dříve jednoduché účetnictví), mzdovou agendu, přiznání k daním pro malé a střední firmy, zastupujeme klienty na úřadech. Nabízíme komplexní a individuální přístup ke každému klientovi. Dle jeho požadavků a potřeb sjednáváme schůzky v jakoukoliv hodinu, i o víkendech, aby vzájemná spolupráce nijak nenarušovala obchodní činnost společnosti. Naším hlavním cílem je spokojený zákazník, proto za klíčový prvek považujeme komunikaci . Za každých okolností se snažíme porozumět klientovi a přizpůsobit se jeho požadavkům.</p>
 	</article>
@@ -13,54 +15,40 @@
 	</article>
 </section>
 
+     
+
 <section id="submenu">
 	<article>
 		<section class="col-sm-4">
 			<section>
-				<h4>aktuálně</h4>
+				<h4><%= @html_act.css('h1').text %></h4>
 				<ul>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Sleva na manžela/manželku</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Cestovní náhrady 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Minimální zálohy OSVČ 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Zdanění DPP bez prohlášení 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">POZEMKY A DPH OD 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Prodejci tvrdého alkoholu musí mít od 17.10.2013 koncesi</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Náhradu mzdy bude zaměstnavatel od ledna vyplácet opět jen po dobu 14 dnů</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">OČR</a></li>
+					<% @html_act.css('h2').each_with_index do |x, i| %>
+            <li><span class="glyphicon glyphicon-chevron-right"></span><a href="/pages/actually#<%= i.to_s %>"><%=x.text %></a></li>
+          <% end %>
 				</ul>
 			</section>
 		</section>
 		<section class="col-sm-4">
 			<section>
-				<h4>rok 2013</h4>
+				<h4><%= @html_2013.css('h1').text %></h4>
 				<ul>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Sleva na manžela/manželku</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Cestovní náhrady 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Minimální zálohy OSVČ 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Zdanění DPP bez prohlášení 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">POZEMKY A DPH OD 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Prodejci tvrdého alkoholu musí mít od 17.10.2013 koncesi</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Náhradu mzdy bude zaměstnavatel od ledna vyplácet opět jen po dobu 14 dnů</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">OČR</a></li>
+					<% @html_2013.css('h2').each_with_index do |x, i| %>
+            <li><span class="glyphicon glyphicon-chevron-right"></span><a href="/pages/2013#<%= i.to_s %>"><%=x.text %></a></li>
+          <% end %>
 				</ul>
 			</section>
 		</section>
 		<section class="col-sm-4">
 			<section>
-				<h4>archív</h4>
-				<ul>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Sleva na manžela/manželku</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Cestovní náhrady 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Minimální zálohy OSVČ 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Zdanění DPP bez prohlášení 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">POZEMKY A DPH OD 2014</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Prodejci tvrdého alkoholu musí mít od 17.10.2013 koncesi</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">Náhradu mzdy bude zaměstnavatel od ledna vyplácet opět jen po dobu 14 dnů</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="/">OČR</a></li>
-				</ul>
+				<h4><%= @html_archiv.css('h1').text %></h4> 
+			<ul>
+				<% @html_archiv.css('h2').each_with_index do |x, i| %>
+          <li><span class="glyphicon glyphicon-chevron-right"></span><a href="/pages/archiv#<%= i.to_s %>"><%=x.text %></a></li>
+        <% end %>
+			</ul>
 			</section>
 		</section>
 	</article>
 </section>
-
 

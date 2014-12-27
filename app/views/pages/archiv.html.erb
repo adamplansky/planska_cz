@@ -1,20 +1,22 @@
+<% i = -1 %>
+
 <section class="archiv top_nav_content">
   <h1>Archiv</h1>
   <article>
 	
 
       <!-- ROK 2010 -->
-<h2 class="superh"><a class="link">Rok 2011 </a></h2>
+<% i+=1%><h2 id="<%= i %>" class="superh"><a class="link">Rok 2011 </a></h2>
 <div class="content">
 
 
-<h2><a class="link">Novela zákona DPH od 1.4.2011 </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Novela zákona DPH od 1.4.2011 </a></h2>
 <div class="content">
               <a href="files/Novela_zakona_o_DPH_od_1.4.2011.docx">Novela zákona DPH od 1.4.2011</a>
 </div>
 
 
-<h2><a class="link">Skonta a bonusy od 1.4.2011</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Skonta a bonusy od 1.4.2011</a></h2>
 <div class="content">
               <p>Opravný daňový doklad by měl vystavit dodavatel do 15 dnů ode dne zjištění skutečností rozhodných pro provedení opravy.</p>
               <p>Odběratel je povinen opravit odpočet daně a to ve zdaňovacím období, kdy se dozvěděl o okolnostech rozhodných pro vznik povinnosti ji provést - tj. v zásadě bez ohledu na doručení opravného daňového dokladu. Opravu odpočtu plátce prokazuje opravným daňovým dokladem nebo jiným dokladem souvisejícím s opravou nebo jiným způsobem např. smlouvami, (§ 74 zákona o DPH).
@@ -23,14 +25,14 @@
                   <a href="http://cds.mfcr.cz/cps/rde/xchg/cds/xsl/legislativa_metodika_13536.html">Odkaz MFCR</a></p>
 </div>
 
-<h2><a class="link">Daňové dobropisy a vrubopisy od 1. dubna</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Daňové dobropisy a vrubopisy od 1. dubna</a></h2>
 <div class="content">
               <p>Situace, kdy se použije oprava základu daně a výše daně s dopadem do aktuálního přiznání k DPH, je popsána v § 42 odst. 1 zákona o DPH. <strong>Vymezení situací se po novele účinné od 1. 4. 2011 v zásadě nemění</strong>. Jde například o zrušení nebo vrácení celého nebo části zdanitelného plnění, snížení nebo zvýšení základu daně na základě sjednaných podmínek u zdanitelného plnění, ke kterému dojde po datu uskutečnění zdanitelného plnění.</p>
               <p>Změnou oproti úpravě do konce března je skutečnost, že <strong>daňovým dokladem již není daňový dobropis a vrubopis, ale opravný daňový doklad</strong>. Další změna spočívá v tom, že se rozšiřuje počet situací, kdy je nutno prokázat doručení dokladu pro snížení daně na výstupu. Při opravě je nutno rozlišovat, zda vznikla povinnost vystavit daňový doklad u opravovaného zdanitelného plnění.</p>
               <p>Oproti stavu do konce března, kdy je potřeba prokazovat doručení daňového dokladu v případě, že odběratelem je plátce daně, se od dubna okruh plnění rozšiřuje na zdanitelná plnění poskytovaná osobám povinným k dani a právnickým osobám nezaloženým za účelem podnikání. Za osobu povinnou k dani se považují podnikající fyzické a právnické osoby bez ohledu na to, zda jsou registrovány k DPH či nikoliv, tj. jde o pojem širší než plátce daně.</p>
-          </div>
+</div>
 
-<h2><a class="link">Jiné důležité osobní překážky v práci bez náhrady mzdy podle nařízení vlády číslo 590/2006 Sb.</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci bez náhrady mzdy podle nařízení vlády číslo 590/2006 Sb.</a></h2>
 <div class="content">
               <span>Vyšetření nebo ošetření</span>
               <ul>
@@ -65,7 +67,7 @@
               </ul>
 </div>
 
-<h2><a class="link">Jiné důležité osobní překážky v práci s náhradou mzdy</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci s náhradou mzdy</a></h2>
 <div class="content">
               <span>Vyšetření nebo ošetření</span><br>
               na nezbytně nutnou dobu, bylo-li vyšetření nebo ošetření provedeno ve zdravotnickém zařízení, které je ve smluvním vztahu ke zdravotní pojišťovně, kterou si zaměstnanec zvolil, a které je <strong>nejblíže </strong>bydlišti nebo pracovišti zaměstnance a je schopné potřebnou zdravotní péči poskytnout, pokud vyšetření nebo ošetření nebylo možné provést <strong>mimo pracovní dobu</strong>.
@@ -122,11 +124,12 @@
               </ul>
 
 </div>
-<h2><a class="link">Informace k daňovému řádu</a></h2>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">Informace k daňovému řádu</a></h2>
 <div class="content">
               <a href="http://cds.mfcr.cz/cps/rde/xchg/cds/xsl/dane_poplatky_10657.html?year=0">http://cds.mfcr.cz/cps/rde/xchg/cds/xsl/dane_poplatky_10657.html?year=0</a>
           </div>
-<h2><a class="link">Ošetřovné</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Ošetřovné</a></h2>
 <div class="content">
               <span style="font-size: 9px; color: #919191">( §§ 39 až 41 zákona číslo 187/2006 Sb., o nemocenském pojištění.)</span>
               <h3>Podmínky nároku na ošetřovné</h3>
@@ -160,9 +163,9 @@
               <p>II. díl – Rozhodnutí o ukončení potřeby ošetřování (péče): Ošetřující lékař v tomto díle doplní poslední den potřeby ošetřování (péče) a předá jej osobě, která potřebovala ošetřování (osobě, která ji doprovází). Ošetřující lékař může rozhodnout o ukončení potřeby ošetřování nejvýše tři kalendářní dny dopředu ode dne, kdy vyšetřením zjistil, že potřeba ošetřování (péče) pominula, resp. pomine. Pojištěnec vyplní údaje v části B tohoto dílu rozhodnutí. Tiskopis předá svému zaměstnavateli, který jej po doplnění údajů v části C zašle příslušné OSSZ.</p>
               <h3>Potvrzení o trvání potřeby ošetřování (péče)</h3>
               <p>Tímto tiskopisem zaměstnanec prokazuje trvání potřeby ošetřování člena domácnosti. Lékař jej vystavuje na požádání zaměstnance, zejména v případech, kdy se osoby v ošetřování (péči) o člena domácnosti vystřídaly anebo v případech, kdy jde o dlouhodobě trvající potřebu ošetřování. Trvání potřeby ošetřování se potvrzuje ke dni vystavení tohoto tiskopisu.</p>
-          </div>
+</div>
 
-<h2><a class="link">Minimální zálohy OSVČ 2011</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Minimální zálohy OSVČ 2011</a></h2>
 <div class="content">
               <span>Zdravotní</span> 1670,-
               <br>
@@ -172,7 +175,7 @@
               <br>
 </div>
 
-<h2><a class="link">Cestovní náhrady v roce 2011</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Cestovní náhrady v roce 2011</a></h2>
 <div class="content">
               <p><span>Stravné </span>Za každý kalendářní den pracovní cesty v roce 2011 poskytne zaměstnavatel zaměstnanci<strong> v neveřejné sféře (podnikatelské) </strong>dle § 163/1 stravné nejméně ve výši:</p>
               a) 63 Kč, trvá-li pracovní cesta 5 až 12 hodin,<br>
@@ -226,13 +229,13 @@
 
 
 </div>
-<h2><a class="link">ELDP</a></h2>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">ELDP</a></h2>
 <div class="content">
-              ELDP se <b>vyplňuje</b> nejpozději <b>do 30. dubna</b> následujícího kalendářního roku, trvala-li výdělečná činnost k 31. prosinci. ELDP se <b>předkládá </b>OSSZ/PSSZ <b>do 30 dnů ode dne zápisu</b> údajů do ELDP.
-    
-    
+  ELDP se <b>vyplňuje</b> nejpozději <b>do 30. dubna</b> následujícího kalendářního roku, trvala-li výdělečná činnost k 31. prosinci. ELDP se <b>předkládá </b>OSSZ/PSSZ <b>do 30 dnů ode dne zápisu</b> údajů do ELDP.
 </div>
-<h2><a class="link">Změny od 1. 1. 2011 v nemocenském pojištění u OSVČ</a></h2>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">Změny od 1. 1. 2011 v nemocenském pojištění u OSVČ</a></h2>
 <div class="content">
               <a href="files/Tabulka_pro_vypocet_nemocenskeho_OSVC.xls">Tabulka pro výpočet nemocenského OSVČ</a><br>
               <br>
@@ -253,7 +256,8 @@
               <h3>Vedlejší činnost a nemocenské</h3>
               <p>Od 1.1.2011 při platbě nemoc.pojištění se vedlejší činnost mění na HLAVNÍ!!! Zálohy na důchodové musí být potom zaplaceny alespoň v minimální výši!!!</p>
 </div>
-<h2><a class="link">Změny v nemocenském pojištění od 1. 1. 2011</a></h2>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">Změny v nemocenském pojištění od 1. 1. 2011</a></h2>
 <div class="content">
               <p><a href="files/Porovnani_odvodu_za_zam_2010_a_2011.xls">Porovnání odvodů za zam. 2010 a 2011</a></p>
               <p><a href="http://www.cssz.cz/cz/nemocenske-pojisteni/novy-zakon-o-nemocenskem-pojisteni/vzory-prikladu-spravneho-vyplneni-tiskopisu-priloha-k-zadosti-o.htm">Vzory vyplnění přílohy žád.o nemocenské</a></p>
@@ -310,8 +314,9 @@
               <p>Takto se sice již postupovalo, ale právní úprava nebyla jednoznačná, proto se jen zpřesňuje. Nejedná se tedy o změnu v dosavadním postupu.</p>
 
               <p></p>
-          </div>
-<h2><a class="link">Identifikační číslo provozovny (IČP)</a></h2>
+</div>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">Identifikační číslo provozovny (IČP)</a></h2>
 <div class="content">
               <p>
                   Novela zákona o živnostenském podnikání, která začala platit od 1. července, ukládá novou povinnost podnikateli, který svoji činnost vykonává <b>v provozovně</b>. Provozovna musí být označena <b>identifikačním číslem</b>.
@@ -329,9 +334,7 @@
               <p>Provozovna musí být vždy trvale a zvenčí viditelně označena <b>jménem a příjmením podnikatele </b>(je-li podnikatel právnická osoba, pak se namísto jména a příjmení uvede obchodní firma nebo název podnikatele), <b>identifikačním číslem osoby </b>(bylo-li přiděleno) a <b>identifikačním číslem provozovny</b>. Provozuje-li podnikatel svoji živnost ve stánku či v pojízdné prodejně, musí být takový stánek nebo prodejna dále označena i údajem o sídle nebo místě podnikání podnikatele.</p>
 </div>
 
-
-
-<h2><a class="link">Úsporný balíček</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Úsporný balíček</a></h2>
 <div class="content">
               <ul>
                   <li>Lidé registrovaní na úřadu práce nebudou moci pobírat dávky a současně pracovat, jak je tomu nyní ve vybraných případech. </li>
@@ -346,12 +349,11 @@
 
 </div>
 
-
-
-      <!-- ROK 2010 -->
-<h2 class="superh"><a class="link">Rok 2010 </a></h2>
+<!-- ROK 2010 -->
+<% i+=1%><h2 id="<%= i %>" class="superh"><a class="link">Rok 2010 </a></h2>
 <div class="content">
-<h2><a class="link">Novinky v nemocenském pojištění od 1. 6. 2010</a></h2>
+  
+<% i+=1%><h2 id="<%= i %>"><a class="link">Novinky v nemocenském pojištění od 1. 6. 2010</a></h2>
 <div class="content">
               <p>
                   <strong>Od 1. června 2010 se ruší třídenní karenční doba pro ošetřovné</strong>. 
@@ -374,17 +376,17 @@
               <p>
                   <strong>Nárok na doplatek PPM </strong>vzniká <strong>za období od 1. ledna 2010 do 31. května 2010. Výše doplatku</strong>  se stanoví jako <strong>rozdíl mezi PPM podle nové úpravy a PPM vyplacenou za období do 31. května 2010. O doplatek není nutné žádat</strong> , OSSZ/PSSZ příjemce vyhledají a výpočet i výplatu doplatků zabezpečí bez žádosti. Lhůtu pro výplatu doplatku PPM zákon nestanovuje. Z technických důvodů bude ČSSZ doplatky PPM za leden až květen 2010 <strong>vyplácet od října 2010</strong>, kdy bude k dispozici příslušné programové vybavení. Doplatky budou OSSZ/PSSZ vyplácet způsobem, který si příjemce zvolil v původní žádosti o PPM, tj. bezhotovostní na účet či v hotovosti na adresu uvedenou v žádosti.
               </p>
-          </div>
-<h2><a class="link">Zaměstnání malého rozsahu</a></h2>
+</div>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zaměstnání malého rozsahu</a></h2>
 <div class="content">
               <h3>§ 7 Pojištění při zaměstnání malého rozsahu</h3>
               <span>(1) </span>Zaměstnáním malého rozsahu se rozumí zaměstnání, v němž jsou splněny podmínky uvedené v <a href="http://business.center.cz/business/pravo/zakony/nemocenske-pojisteni/cast2.aspx">§ 6</a>, s výjimkou podmínky uvedené v <a href="http://business.center.cz/business/pravo/zakony/nemocenske-pojisteni/cast2.aspx">§ 6</a> odst. 1 písm. c), neboť sjednaná částka započitatelného příjmu je nižší než rozhodný příjem nebo započitatelný příjem nebyl sjednán vůbec.<br>
               <span>(2) </span>Při výkonu zaměstnání malého rozsahu je zaměstnanec pojištěn jen v těch kalendářních měsících po dobu trvání takového zaměstnání, v nichž dosáhl částky započitatelného příjmu aspoň ve výši rozhodného příjmu.<br>
               <span>(3)</span> Započitatelný příjem zúčtovaný až po skončení zaměstnání malého rozsahu se považuje pro účely pojištění za příjem zúčtovaný do kalendářního měsíce, v němž toto zaměstnání skončilo.<br>
-          </div>
+</div>
 
-
-<h2><a class="link">Zálohy na zdravotní, důchodové a nemocenské pojištění 2010</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zálohy na zdravotní, důchodové a nemocenské pojištění 2010</a></h2>
 <div class="content">
 
 
@@ -393,9 +395,9 @@
               <span>Nemocenské</span>               56,-<br>
 
               Zálohy za kalendářní měsíc jsou splatné od 1. do 20. dne následujícího měsíce na důchodové a nemocenské, na zdravotní do 8. Zaměstnavatel platí pojistné na zdravotní pojištění za jednotlivé kalendářní měsíce a od 1. ledna 2010 je splatné od 1. do 20. dne následujícího kalendářního měsíce. Splatnost tedy již nebude záviset na dni výplaty mezd. Pro zaměstnavatele tím dochází ke sjednocení termínu splatnosti pojistného na zdravotní pojištění a sociální pojištění.
-          </div>
+</div>
 
-<h2><a class="link">Novela zákona o DPH od 1.1.2010</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Novela zákona o DPH od 1.1.2010</a></h2>
 <div class="content">
               <p><span>* MÍSTO PLNĚNÍ PŘI POSKYTNUTÍ SLUŽBY (§9)</span> je místo, kde má tato osoba sídlo nebo místo podnikání. Místem plnění při poskytnutí služby osobě nepovinné k dani je místo, kde má osoba poskytující službu sídlo nebo místo podnikání.</p>
               <p><span>* DÁREK V RÁMCI EKONOMICKÉ ČINNOSTI (§ 13/8c)</span>Za dodání zboží nebo převod nemovitosti se však nepovažuje</p>
@@ -410,7 +412,8 @@
               Shrnutí: Souhrnné hlášení se bude podávat i na poskytnuté služby do EU. Podání bude pouze elektronicky, s měsíční frekvencí. Negativní hlášení se nepodává.<br>
 
 </div>
-<h2><a class="link">Změna sazeb DPH od 1.1.2010</a></h2>
+
+<% i+=1%><h2 id="<%= i %>"><a class="link">Změna sazeb DPH od 1.1.2010</a></h2>
 <div class="content">
               <i style="font-size: 8px;">Sbírka č. 362/2009 částka 115</i>
               <p>Od 1.1.2010 se mění zvýšená sazba dabě <strong>z 19 % na 20 % </strong>a snížená <strong>z 9 % na 10 %</strong>. </p>
@@ -433,8 +436,7 @@
               <p>U smluv o finančním pronájmu, které byly uzavřeny do 31. prosince 2008 podle zákona č. 235/2004 Sb., ve znění účinném do 31. prosince 2008, a jejichž předmět smlouvy byl předán do užívání nájemci do 31. prosince 2008, se po 1. lednu 2010 uplatní sazba daně platná do 31. prosince 2008. </p>
 </div>
 
-
-<h2><a class="link">Cestovní náhrady v roce 2010 </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Cestovní náhrady v roce 2010 </a></h2>
 <div class="content">
               <span>Stravné</span>
               Za každý kalendářní den pracovní cesty v roce 2010 poskytne zaměstnavatel zaměstnanci <b>v neveřejné sféře (podnikatelské)</b> dle § 163/1 stravné nejméně ve výši:<br>
@@ -479,7 +481,7 @@
 
 </div>
 
-<h2><a class="link">Janotův úsporný balíček pro rok 2010 </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Janotův úsporný balíček pro rok 2010 </a></h2>
 <div class="content">
               <h4>DAŇ Z PŘÍJMŮ</h4>
               <strong>Daňové zvýhodnění na vyživované dítě</strong> se od roku 2010 zvýší z 10.680 Kč (<strong>890 Kč/měsíc</strong>) na 11.604 Kč (<strong>967 Kč/měsíc</strong>).<br>
@@ -532,12 +534,11 @@
 
       <!-- KONEC ROK 2010 -->
       <!-- ROK 2009 -->
-<h2 class="superh"><a class="link">Rok 2009 </a></h2>
+<% i+=1%><h2 id="<%= i %>" class="superh"><a class="link">Rok 2009 </a></h2>
 
 <div class="content">
-
-
-<h2><a class="link">Změny ve zdravotním, nemocenském a důchodovém pojištění od 1.1.2009 </a></h2>
+  
+<% i+=1%><h2 id="<%= i %>"><a class="link">Změny ve zdravotním, nemocenském a důchodovém pojištění od 1.1.2009 </a></h2>
 <div class="content">
               <p>Limity pro vznik zaměstnání pro účely zdravotního (ZP), nemocenského (NP) a důchodového pojištění (DP):</p>
               <table class="cenik" width="100%">
@@ -585,9 +586,9 @@
                   </tr>
 
               </tbody></table>
-          </div>
+</div>
 
-<h2><a class="link">Výdajové paušály 2008-2010 </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Výdajové paušály 2008-2010 </a></h2>
 <div class="content">
 
               <i>Výdajový paušál (% z příjmů)<b>2008/2009/2010</b>  </i>
@@ -619,16 +620,16 @@
               <br>
               <span>40 % /60 %/40%</span><br>
               <hr>
-          </div>
+</div>
 
-<h2><a class="link">1.11. 09 se mění se den zaplacení daní FÚ<br>1.1.10 splatnost ZP</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">1.11. 09 se mění se den zaplacení daní FÚ<br>1.1.10 splatnost ZP</a></h2>
 <div class="content">
               <p>Doposud se za den platby považoval den, kdy platba odešla z účtu poskytovatele platebních služeb. Od listopadu letošního roku však tímto dnem bude den, <strong>kdy je platba připsána na účet finančního úřadu</strong>. To znamená, že pro řádné zaplacení daní je třeba počítat i s časem, které budou peněžní ústavy potřebovat na převedení příslušné částky. <strong>U platby v hotovosti</strong> na pokladně finančního úřadu se nic nemění a dnem platby zůstává den převzetí hotovosti.</p>
               <p>Stejná změna se promítne do zákona o pojistném na ZP a SP s účinností od 1.1.2010 s tím, že se sjednotí doba lhůty <strong>splatnosti ZP</strong> se SP, tzn. splatnost bude od 1. do 20. dne následujícího kal. měsíce.</p>
 </div>
 
 
-<h2><a class="link">Paušální výdaj na dopravu<br>= &gt; nevedení knihy jízd </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Paušální výdaj na dopravu<br>= &gt; nevedení knihy jízd </a></h2>
 <div class="content">
               <br>
               <a href="http://www.contax.cz/news/pausalni-vydaj-na-dopravu-/">Paušální výdaj na dopravu</a><br>
@@ -673,15 +674,13 @@
               <p></p>
 </div>
 
-<h2><a class="link">Zkrácený  finanční pronájem </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zkrácený  finanční pronájem </a></h2>
 <div class="content">
               <p><strong>Nájemné  u finančního pronájmu s následnou koupí  najatého hmotného majetku</strong> odpisovaného podle § 30a je daňovým nákladem, pokud doba nájmu u hmotného majetku v <strong>1. skupině trvá 12 měsíců</strong> a <strong>ve 2. skupině 24 měsíců</strong>. Po ukončení nájmu následuje bezprostředně převod vlastnictví a majetek je zahrnut do obchodního majetku nájemce. Ustanovení lze použít na majetek, který je předmětem smlouvy o finančním pronájmu s následnou koupí najatého hmotného majetku <strong>uzavřené od 20.7.2009 do 30.6.2010</strong>. Nelze použít na dodatky ke smlouvám o finančním pronájmu s následnou koupí najatého hmotného majetku uzavřeným do dne nabytí účinnosti tohoto zákona.</p>
               <p>Dále musí jít o majetek, který  bude leasingová společnost odpisovat podle § 30a ZDP, pronajímatel bude prvním vlastníkem a musí jej nabýt od 1.1.2009 do 30.6.2010. </p>
 </div>
 
-
-
-<h2><a class="link">Mimořádné odpisy 1.1.09 – 30.6.10</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Mimořádné odpisy 1.1.09 – 30.6.10</a></h2>
 <div class="content">
               <b><span>§30a) ZDP</span></b><br>
               <p>Zkrácení doby odpisování hmotného majetku zařazeného <span>v 1. a 2. skupině</span> pořízeného <span>od 1.1.2009 a do 30. června 2010.</span> </p>
@@ -729,7 +728,7 @@
 
 </div>
 
-<h2><a class="link">Slevy na pojistném na sociální zabezpečení a příspěvku na státní politiku zaměstnanosti od 08/09 – 12/10</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Slevy na pojistném na sociální zabezpečení a příspěvku na státní politiku zaměstnanosti od 08/09 – 12/10</a></h2>
 <div class="content">
               Slevu bude možné uplatnit u zaměstnanců: 
              <ul>
@@ -751,7 +750,7 @@
               <b>Sleva za zaměstnance se zaokrouhluje na celé koruny nahoru.</b>
 </div>
 
-<h2><a class="link">Mimořádná sleva na pojistném </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Mimořádná sleva na pojistném </a></h2>
 <div class="content">
               = součet <b>úhrnu slev na pojistném za jednotlivé kalendářní měsíce</b> <span>od počátku roku 2009</span> přede dnem účinnosti tohoto zákona (tedy za měsíce leden až červenec 2009).<br>
               <ul>
@@ -760,7 +759,7 @@
               </ul>
 </div>
 
-<h2><a class="link">Dodaňování závazků v daňové evidenci </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Dodaňování závazků v daňové evidenci </a></h2>
 <div class="content">
               <p><i style="font-size: xx-small">Zákon č. 2/2009 Sb. s účinností od 1. 1. 2009 upravuje v § 23/3/a/12 ZDP pravidla pro dodaňování polhůtních a promlčených závazků u fyzických osob – poplatníků s příjmy dle § 7 nebo 9, kteří nevedou účetnictví. </i></p>
               <p><b>Závazky po splatnosti déle než 36 měsíců v případě poplatníků fyzických osob vedoucích daňovou evidenci se až na výjimky ani v roce 2009 nedodaňují.  </b></p>
@@ -768,21 +767,21 @@
               <p>Ministerstvo financí zastává stanovisko, že předmětem případného zvýšení hospodářského výsledku jsou závazky po lhůtě splatnosti <b>včetně DPH</b>. </p>
 </div>
 
-<h2><a class="link">Zálohy na daň z příjmů v roce 2009 </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zálohy na daň z příjmů v roce 2009 </a></h2>
 <div class="content">
               <p>Ministerstvo financí <b>zrušilo povinnost platit zálohy na daň z příjmů splatné v roce 2009</b>. Rozhodnutí se vztahuje pouze na fyzické osoby s příjmy z podnikání a z jiné samostatné výdělečné činnosti a právnické osoby, pokud k <span>1. prosinci 2008 neměly zaměstnance nebo zaměstnávaly nejvýše 5 zaměstnanců</span>. Při zjišťování počtu zaměstnanců se vychází z údajů z povinné přílohy číslo 1 (Počet zaměstnanců ke dni 1. 12. 2008) Vyúčtování daně z příjmů fyzických osob ze závislé činnosti a z funkčních požitků za rok 2008. </p>
               <p><span>Poplatník nemusí žádat o zrušení záloh, zálohy jsou zrušeny automaticky.</span></p>
               <p><span>Zálohy lze platit i nadále, platba bude evidována na osobním daňovém účtu poplatníka jako přeplatek.</span></p>
 </div>
 
-<h2><a class="link">Odpočet u osobního automobilu pořízeného i pro účely nesouvisející s podnikáním</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Odpočet u osobního automobilu pořízeného i pro účely nesouvisející s podnikáním</a></h2>
 <div class="content">
               <p>Pokud plátce použije osobní automobil, u jehož pořízení uplatnil nárok na odpočet daně, jak pro uskutečnění své ekonomické činnosti, <b>tak i pro účely s ní nesouvisející s ekonomickou činností</b>, má povinnost postupovat podle <b>ustanovení § 72 odst. 5 zákona o DPH, ze kterého vyplývá, že plátce má nárok na odpočet daně pouze v poměrné výši</b> odpovídající rozsahu použití pro ekonomickou činnost.</p>
               <p>Pokud však plátce při pořízení osobního automobilu uplatní nárok na odpočet daně <b>v plné výši</b>, považuje se použití osobního automobilu pro soukromou potřebu nebo soukromou potřebu zaměstnanců, popř. obecně pro jiné účely, než je ekonomická činnost,  za poskytnutí služby pro účely nesouvisející s uskutečňováním ekonomických činností plátce <b>ve smyslu § 14 odst. 3 písm. a) a odst. 4 zákona o DPH a plátce DPH je povinen z této služby přiznávat daň na výstupu v daňovém přiznání za každé zdaňovací období</b>, v němž osobní automobil bude využívat pro tyto účely nesouvisející s jeho ekonomickou činností.</p>
               <p>Základ daně plátce stanoví podle ustanovení § 36 odst. 6 zákona o DPH, který byl rovněž novelizován zákonem č. 87/2009 Sb.</p>
 </div>
 
-<h2><a class="link">Odpočet DPH u osobních automobilů</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Odpočet DPH u osobních automobilů</a></h2>
 <div class="content">
               <p>Novela zákona o DPH k 1. 4. 2009 <b>zrušila dosavadní zákaz odpočtu DPH na vstupu u osobních automobilů. </b></p>
               <p>Pokud byl osobní automobil pořízen do 31. 3. 2009, zákaz odpočtu DPH zakotvený v § 75 odst. 2 <b>31. 3. 2009 </b>dále platí a odpočet nelze uplatnit ani v daňovém přiznání za období po 1. 4. 2009. </p>
@@ -791,7 +790,7 @@
 
 </div>
 
-<h2><a class="link">Sazby sociálního pojistného v roce 2009 a 2010</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Sazby sociálního pojistného v roce 2009 a 2010</a></h2>
 <div class="content">
               <b><span>2009: </span></b>
               <p>
@@ -816,10 +815,10 @@
 
 
       <!-- ROK 2008 -->
-<h2 class="superh"><a class="link">Rok 2008 </a></h2>
+<% i+=1%><h2 id="<%= i %>" class="superh"><a class="link">Rok 2008 </a></h2>
 <div class="content">
 
-<h2><a class="link">Novela zákona o dani silniční </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Novela zákona o dani silniční </a></h2>
 <div class="content">
 
               <p><span>Snížení sazby daně – první registrace vozidel (§ 6/6)</span> – <b>uplatní se už pro rok 2008!!!</b></p>
@@ -847,7 +846,7 @@
 
 
 </div>
-<h2><a class="link">První tři dny nemoci </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">První tři dny nemoci </a></h2>
 <div class="content">
 
               <p><b>Karenční doba</b> (zavedená 1. ledna 2008), což znamenalo neposkytování během prvních tří   nemocenských dávek <b>se ruší!</b> Rozhodl o tom Ústavní soud.</p>
@@ -862,12 +861,12 @@
               </ul>
               Podrobně na serveru <a href="http://www.mpsv.cz/files/clanky/5413/02062008.pdf">MPSV</a>
 </div>
-<h2><a class="link">DPH ve výstavbě </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">DPH ve výstavbě </a></h2>
 <div class="content">
 
               <p>Na stránkách České daňové správy jsou nejčastější dotazy k DPH ve výstavbě po 1. 1. 2008: <a href="http://cds.mfcr.cz/cps/rde/xchg/cds/xsl/legislativa_metodika_8681.html">http://cds.mfcr.cz/cps/rde/xchg/cds/xsl/legislativa_metodika_8681.html</a></p>
 </div>
-<h2><a class="link">Novelizace živnostenského zákona od 1.7.2008 </a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Novelizace živnostenského zákona od 1.7.2008 </a></h2>
 <div class="content">
 
 
@@ -895,7 +894,7 @@
                   </li>
               </ul>
 </div>
-<h2><a class="link">Daň z příjmu FO</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Daň z příjmu FO</a></h2>
 <div class="content">
 
               <p>
@@ -918,7 +917,7 @@
               je hrubá mzda navýšená o 35%.
               </p>
 </div>
-<h2><a class="link">Slevy na dani z příjmu v roce 2008 (ročně)</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Slevy na dani z příjmu v roce 2008 (ročně)</a></h2>
 <div class="content">
 
               <table align="left">
@@ -979,7 +978,7 @@
           </div>
           <div class="cleaner">
 </div>
-<h2><a class="link">Odpočitatelné položky od základu daně</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Odpočitatelné položky od základu daně</a></h2>
 <div class="content">
 
               <ul>
@@ -1000,7 +999,7 @@
                   daně daňovým poradcem do 30. 6. 2009).</span>
               </p>
 </div>
-<h2><a class="link">Zdravotní pojištění</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zdravotní pojištění</a></h2>
 <div class="content">
               <p>
                   Zálohy jsou splatné vždy nejpozději k 8. následujícího měsíce.
@@ -1016,7 +1015,7 @@
               průběžně.
               </p>
 </div>
-<h2><a class="link">Sociální pojištění (důchodové a nemocenské)</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Sociální pojištění (důchodové a nemocenské)</a></h2>
 <div class="content">
               <p>
                   OSVČ s <span>hlavní činností</span> (jen příjmy z podnikání) platí zálohy na důchodové pojištění
@@ -1052,7 +1051,7 @@
               splatná od měsíce podání Přehledu za rok 2007, které se podává do 30.4.2008.
               </p>
 </div>
-<h2><a class="link">Daň z příjmu PO</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Daň z příjmu PO</a></h2>
 <div class="content">
 
               <ul>
@@ -1061,7 +1060,7 @@
                   <li>v roce 2010 na 19%</li>
               </ul>
 </div>
-<h2><a class="link">Optimalizace letošních přeplatků pojištění</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Optimalizace letošních přeplatků pojištění</a></h2>
 <div class="content">
 
               <p>
@@ -1070,7 +1069,7 @@
                   o vrácení přeplatku, ale necháte ho převést na úhradu záloh za rok 2008</span>.
               </p>
 </div>
-<h2><a class="link">Změna v odpisových skupinách</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Změna v odpisových skupinách</a></h2>
 <div class="content">
 
               <p>
@@ -1080,7 +1079,7 @@
               i automobilů pořízených do 31. 12. 2007.
               </p>
 </div>
-<h2><a class="link">Zrušení maximální vstupní ceny</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zrušení maximální vstupní ceny</a></h2>
 <div class="content">
 
               <p>
@@ -1090,7 +1089,7 @@
               do 31. 12. 2007, a to až do doby jejich vyřazení z majetku. a
               </p>
 </div>
-<h2><a class="link">Náhrady jízdních výdajů u zaměstnance a u podnikatele</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Náhrady jízdních výdajů u zaměstnance a u podnikatele</a></h2>
 <div class="content">
 
               <pre>    <b>NÁHRADY ZAMĚSTNANCE               NÁKLADY PODNIKATELE</b>
@@ -1141,7 +1140,7 @@
 
       </pre>
 </div>
-<h2><a class="link">Rozdíly při výpočtu mzdy 2007 a 2008</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Rozdíly při výpočtu mzdy 2007 a 2008</a></h2>
 <div class="content">
               <p>
                   <span>základ daně (zaokrouhluje se na stovky nahoru)</span>
@@ -1164,14 +1163,14 @@
               2007 ... roční 6.000, měsíční 500<br>
               2008 ... roční 10.680, měsíční 890<br>
 </div>
-<h2><a class="link">Firemní auto pro soukr.účely v roce 2008 - 1 % vstupní ceny vozu</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Firemní auto pro soukr.účely v roce 2008 - 1 % vstupní ceny vozu</a></h2>
 <div class="content">
 
 
               <p>Bezplatné poskytnutí motorového vozidla zaměstnanci k používání pro služební i soukromé účely <strong>podléhá na straně zaměstnance zdanění</strong> podle § 6 odst. 6 ZDP. Jedná se o <strong>nepeněžní příjem zaměstnance ve výši 1 % vstupní ceny vozidla za každý i započatý kalendářní měsíc poskytnutí</strong> vozidla. </p>
               <p class="blue">Nově od 1. 1. 2008 se tento nepeněžní příjem zahrnuje do vyměřovacího základu pro výpočet pojistného na sociální pojištění a na všeobecné zdravotní pojištění..</p>
 </div>
-<h2><a class="link">DPH v roce 2008</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">DPH v roce 2008</a></h2>
 <div class="content">
               <ul>
                   <li>došlo ke zvýší snížené sazby daně z 5% na 9% (podraží potraviny, léky, knihy…)</li>
@@ -1186,7 +1185,7 @@
       <!-- ROK 2007 -->
 <h2 class="superh"><a class="link">Rok 2007 </a></h2>
 <div  class="content">
-<h2><a class="link">Daň z příjmu FO</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Daň z příjmu FO</a></h2>
 <div class="content">
 
               <p>
@@ -1269,7 +1268,7 @@
               </tbody></table>
 </div>
 
-<h2><a class="link">Zdravotní pojištění</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Zdravotní pojištění</a></h2>
 <div class="content">
 
               <p>
@@ -1291,7 +1290,7 @@
                       vyjde.
               </p>
 </div>
-<h2><a class="link">Sociální pojištění (důchodové a nemocenské)</a></h2>
+<% i+=1%><h2 id="<%= i %>"><a class="link">Sociální pojištění (důchodové a nemocenské)</a></h2>
 <div class="content">
 
   <p>

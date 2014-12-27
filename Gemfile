@@ -14,6 +14,9 @@ gem 'bootstrap-sass'
 gem 'high_voltage'
 gem "activerecord-tableless", "~> 1.0"
 gem 'sitemap_generator'
+gem 'nokogiri'
+
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
