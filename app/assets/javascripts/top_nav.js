@@ -1,6 +1,8 @@
 $(document).ready(function(){
   
-   $(document).on('click ontouchstart', '.link', function () {
+
+   $(document).on('click touchstart', '.link', function (e) {
+       e.preventDefault();
        $(this).parent().next(".content").toggle();
    });
 });
