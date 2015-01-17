@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-   $(document).on('click touchstart', '.link', function () {
+   $(document).on('click ontouchstart', '.link', function () {
        $(this).parent().next(".content").toggle();
    });
 });
