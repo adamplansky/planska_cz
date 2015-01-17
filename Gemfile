@@ -29,6 +29,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'thin'
+  gem 'unicorn'
   gem 'rails_12factor'
+  gem 'rack-timeout'
 end
