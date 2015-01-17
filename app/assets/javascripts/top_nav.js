@@ -1,6 +1,8 @@
 $(document).ready(function(){
   
-  //alert('test');  
+
+  
+  
   $(document).on('click', '.link', function () {
       $(this).parent().next(".content").toggle();
   });
@@ -8,5 +10,10 @@ $(document).ready(function(){
 var ready;
 ready = function() {
   $('.content').hide();
+  var url = window.location.href; 
+  var uriId = url.split("#")[1];
+  if(uriId != null){
+    $("#" + uriId).next(".content").toggle();
+  }
 };
 $(document).on('page:load', ready);

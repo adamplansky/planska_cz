@@ -15,7 +15,7 @@ gem 'high_voltage'
 gem "activerecord-tableless", "~> 1.0"
 gem 'sitemap_generator'
 gem 'nokogiri'
-
+gem 'rack-timeout'
 
 group :development do
   gem 'better_errors'
@@ -31,5 +31,5 @@ group :production do
   gem 'pg'
   gem 'unicorn'
   gem 'rails_12factor'
-  gem 'rack-timeout'
+
 end
