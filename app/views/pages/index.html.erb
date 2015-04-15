@@ -32,9 +32,9 @@
 		</section>
 		<section class="col-sm-4">
 			<section>
-				<h4><%= @html_2013.css('h1').text %></h4>
+				<h4><%= @html_2014.css('h1').text %></h4>
 				<ul>
-					<% @html_2013.css('h2').each_with_index do |x, i| %>
+					<% @html_2014.css('h2').each_with_index do |x, i| %>
             <li><span class="glyphicon glyphicon-chevron-right"></span><a href="/pages/2013#<%= i.to_s %>"><%=x.text %></a></li>
           <% end %>
 				</ul>
