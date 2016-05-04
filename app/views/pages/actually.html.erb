@@ -1,58 +1,65 @@
 <% i = -1 %>
 
-
 <section class="actually top_nav_content">
   <h1>Aktuálně</h1>
   <article>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">Zvýšení daňového zvýhodnění na děti od 5/2016</a></h2>
+    <div class = "content">
+      <p><i>(§ 35c odst. 1 )</i></p>
+      <p><strong>První dítě – 1 117,- / měsíc</strong> (13 404,- / rok) -&gt; beze změny</p>
+      <p><strong>Druhé dítě – 1 417,- / měsíc</strong> (17 004,-/ rok) -&gt; zvýšení o 100,- měsíčně z původních 1 317,-</p>
+      <p><strong>Třetí a každé další dítě – 1 717,- / měsíc</strong> (20 604,-/ rok) -&gt; zvýšení o 300,- měsíčně z původních 1 417,-</p>
+    </div>
+
     <% i+=1%><h2 id="<%= i %>"><a class="link">EET 2) Elektronická evidence tržeb </a></h2>
     <div class = "content">
 
       <p><%= link_to "http://www.e-trzby.cz/", "http://www.e-trzby.cz/"%></p>
       <p>Zákon o evidenci tržeb nabyl platnosti vyhlášením ve Sbírce zákonů dne <strong>13. dubna 2016</strong>. Účinnosti nabývá prvním dnem osmého kalendářního měsíce po dni jeho vyhlášení (§ 39 „ZoET“). Evidenční povinnost vznikne podnikatelům v první vlně od 1. prosince 2016.</p>
       <h3>Rozfázování:</h3>
-<ol>
-  <li><strong>fáze (od 1. prosince 2016) - stravovací a ubytovací služby</strong></li>
-    <ul>
-      <li>NACE 55 - Ubytování (většinou krátkodobé ubytování, hotely, kempy, penziony, tábořiště, ubytovny…)</li>
-      <li>NACE 56 - Stravování a pohostinství (nabízena jídla a nápoje k okamžité konzumaci, a to ať již jsou</li>
-      <li> konzumována na místě či nikoliv, restaurace, hospody, kavárny, kantýny,       stánky, zmrzlináři, catering…)</li>
-   </ul>
-  <li><strong>fáze (od 1. března 2017) - maloobchod a</strong></li>
-    <ul>
-      <li>NACE 45.1 - Obchod s motorovými vozidly, kromě</li>
-      <li>NACE 45.3 - Obchod s díly a příslušenstvím  pro motorová vozidla, kromě motocyklů</li>
-      <li>NACE 45.4 - Obchod, opravy a údržba motocyklů,  jejich dílů a příslušenství</li>
-      <li>NACE 46 - Velkoobchod, kromě motorových vozidel</li>
-      <li>NACE 47 - Maloobchod, kromě motorových vozidel (vč. stánkového prodeje, prodeje na tržištích…)</li>
-    </ul>
-   <li><strong>fáze (od 1. března 2018) - ostatní činnosti, které nejsou v 1.,  2. nebo 4. fázi – ostatní NACE neuvedené v jiných fázích</strong>, například se jedná o:</li>
-   <ul>
-     <li>NACE 49.32 - Taxislužba</li>
-     <li>NACE 49.10 - Železniční osobní doprava meziměstská</li>
-     <li>NACE 49.41 - Silniční nákladní doprava</li>
-     <li>NACE 10.7, 10.1,… - Podnikatele ve výrobě (pekaři, cukráři, řezníci…)</li>
-     <li>NACE 86, 69.1, 75.0,… - Svobodná povolání (lékaři, právníci, veterináři…) o a další</li>
-   </ul>
-   <li><strong>fáze (od 1. června 2018) - vybraná řemesla a výrobní</strong></li>
-   <ul>
-     <li>NACE 13 - Výroba textilií</li>
-     <li>NACE 14 - Výroba oděvů</li>
-     <li>NACE 15 - Výroba usní a souvisejících výrobků</li>
-     <li>NACE 16 - Zpracování dřeva, výroba dřevěných, korkových, proutěných a slaměných výrobků, kromě nábytku</li>
-     <li>NACE 17 - Výroba papíru a výrobků z papíru</li>
-     <li>NACE 20.4 - Výroba mýdel a detergentů, čistících a leštících prostředků, parfémů a toaletních přípravků</li>
-     <li>NACE 22 - Výroba pryžových a plastových  výrobků</li>
-     <li>NACE 23 - Výroba ostatních nekovových minerálních výrobků</li>
-     <li>NACE 25 - Výroba kovových konstrukcí a kovodělných výrobků, kromě strojů a zařízení</li>
-     <li>NACE 31 - Výroba nábytku</li>
-     <li>NACE 32 - Ostatní zpracovatelský průmysl (výrobci her a hraček, sportovních potřeb, hudebních nástrojů…)</li>
-     <li>NACE 33 - Opravy a instalace strojů a zařízení</li>
-     <li>NACE 43 - Specializované stavební činnosti  (např. elektrikáři, obkladači, malíři, pokrývači…)</li>
-     <li>NACE 95 - Opravy počítačů a výrobků pro osobní  potřebu a převážně pro domácnost (hodinový manžel, opravář počítačů…)</li>
-     <li>NACE 96 - Poskytování ostatních osobních služeb  (např. kadeřnice, maséři, kartářky…)</li>
+      <ol>
+        <li><strong>fáze (od 1. prosince 2016) - stravovací a ubytovací služby</strong></li>
+        <ul>
+          <li>NACE 55 - Ubytování (většinou krátkodobé ubytování, hotely, kempy, penziony, tábořiště, ubytovny…)</li>
+          <li>NACE 56 - Stravování a pohostinství (nabízena jídla a nápoje k okamžité konzumaci, a to ať již jsou</li>
+          <li> konzumována na místě či nikoliv, restaurace, hospody, kavárny, kantýny,       stánky, zmrzlináři, catering…)</li>
+        </ul>
+        <li><strong>fáze (od 1. března 2017) - maloobchod a</strong></li>
+        <ul>
+          <li>NACE 45.1 - Obchod s motorovými vozidly, kromě</li>
+          <li>NACE 45.3 - Obchod s díly a příslušenstvím  pro motorová vozidla, kromě motocyklů</li>
+          <li>NACE 45.4 - Obchod, opravy a údržba motocyklů,  jejich dílů a příslušenství</li>
+          <li>NACE 46 - Velkoobchod, kromě motorových vozidel</li>
+          <li>NACE 47 - Maloobchod, kromě motorových vozidel (vč. stánkového prodeje, prodeje na tržištích…)</li>
+        </ul>
+        <li><strong>fáze (od 1. března 2018) - ostatní činnosti, které nejsou v 1.,  2. nebo 4. fázi – ostatní NACE neuvedené v jiných fázích</strong>, například se jedná o:</li>
+        <ul>
+          <li>NACE 49.32 - Taxislužba</li>
+          <li>NACE 49.10 - Železniční osobní doprava meziměstská</li>
+          <li>NACE 49.41 - Silniční nákladní doprava</li>
+          <li>NACE 10.7, 10.1,… - Podnikatele ve výrobě (pekaři, cukráři, řezníci…)</li>
+          <li>NACE 86, 69.1, 75.0,… - Svobodná povolání (lékaři, právníci, veterináři…) o a další</li>
+        </ul>
+        <li><strong>fáze (od 1. června 2018) - vybraná řemesla a výrobní</strong></li>
+        <ul>
+          <li>NACE 13 - Výroba textilií</li>
+          <li>NACE 14 - Výroba oděvů</li>
+          <li>NACE 15 - Výroba usní a souvisejících výrobků</li>
+          <li>NACE 16 - Zpracování dřeva, výroba dřevěných, korkových, proutěných a slaměných výrobků, kromě nábytku</li>
+          <li>NACE 17 - Výroba papíru a výrobků z papíru</li>
+          <li>NACE 20.4 - Výroba mýdel a detergentů, čistících a leštících prostředků, parfémů a toaletních přípravků</li>
+          <li>NACE 22 - Výroba pryžových a plastových  výrobků</li>
+          <li>NACE 23 - Výroba ostatních nekovových minerálních výrobků</li>
+          <li>NACE 25 - Výroba kovových konstrukcí a kovodělných výrobků, kromě strojů a zařízení</li>
+          <li>NACE 31 - Výroba nábytku</li>
+          <li>NACE 32 - Ostatní zpracovatelský průmysl (výrobci her a hraček, sportovních potřeb, hudebních nástrojů…)</li>
+          <li>NACE 33 - Opravy a instalace strojů a zařízení</li>
+          <li>NACE 43 - Specializované stavební činnosti  (např. elektrikáři, obkladači, malíři, pokrývači…)</li>
+          <li>NACE 95 - Opravy počítačů a výrobků pro osobní  potřebu a převážně pro domácnost (hodinový manžel, opravář počítačů…)</li>
+          <li>NACE 96 - Poskytování ostatních osobních služeb  (např. kadeřnice, maséři, kartářky…)</li>
 
-   </ul>
-</ol>
+        </ul>
+      </ol>
     </div>
     <% i+=1%><h2 id="<%= i %>"><a class="link">EET 1) Elektronická evidence tržeb </a></h2>
     <div class = "content">
@@ -84,10 +91,10 @@
       <ul><li><strong>Sankce při nepodání kontrolního hlášení</strong></li></ul>
       <p>Pokud plátce nepodá kontrolní hlášení ve stanovené lhůtě, vzniká mu zákonná povinnost uhradit pokutu ve výši:</p>
       <ul>
-      <li>a) 1 000 Kč, pokud jej dodatečně podá (po stanovené lhůtě) bez vyzvání správce daně,</li>
-      <li>b) 10 000 Kč, pokud jej podá v náhradní lhůtě poté, co jej správce daně vyzval,</li>
-      <li>c) 30 000 Kč, pokud nepodá následné kontrolní hlášení dle výzvy správce daně ke změně, doplnění či potvrzení údajů uvedených v podaném kontrolním hlášení, nebo</li>
-      <li>d) 50 000 Kč, pokud nepodá řádné kontrolní hlášení nebo ho nepodá ani v náhradní lhůtě stanovené správcem daně.</li>
+        <li>a) 1 000 Kč, pokud jej dodatečně podá (po stanovené lhůtě) bez vyzvání správce daně,</li>
+        <li>b) 10 000 Kč, pokud jej podá v náhradní lhůtě poté, co jej správce daně vyzval,</li>
+        <li>c) 30 000 Kč, pokud nepodá následné kontrolní hlášení dle výzvy správce daně ke změně, doplnění či potvrzení údajů uvedených v podaném kontrolním hlášení, nebo</li>
+        <li>d) 50 000 Kč, pokud nepodá řádné kontrolní hlášení nebo ho nepodá ani v náhradní lhůtě stanovené správcem daně.</li>
       </ul>
       <p>Správce daně má zákonnou povinnost (nad rámec výše uvedeného) uložit pokutu až do 50 000 Kč tomu, kdo na základě výzvy správce daně k odstranění pochybností nezmění nebo nedoplní nesprávné nebo neúplné údaje prostřednictvím následného kontrolního hlášení.</p>
       <p>Správce daně má zákonnou povinnost (nad rámec výše uvedeného) uložit pokutu až do 500 000 Kč tomu, kdo závažně ztěžuje nebo maří správu daní nepodáním kontrolního hlášení.</p>
@@ -155,325 +162,317 @@
       <p>Sazby základních náhrad a průměrné ceny PHM platí pro OSVČ a zaměstnance, který použil pro pracovní cestu jiné vozidlo než vozidlo zaměstnavatele a cenu PHM nedoložil nákupním dokladem.</p>
     </div>
     <% i+=1%><h2 id="<%= i %>"><a class="link">Pokyn GFŘ D-22 k dani z příjmu</a></h2>
-     <div class = "content">
-        <a href="/files/Pokyn_GFR_D-22.pdf">Pokyn GFŘ D-22 k dani z příjmu</a>
-
-     </div>
-    <% i+=1%><h2 id="<%= i %>"><a class="link">Zvýšení minimální mzdy od 1.1.2016</a></h2>
-     <div class = "content">
-         <p>Od 1. 1. 2016 dojde ke zvýšení měsíční minimální mzdy z <span>9.200 na <strong>9.900 Kč</strong></span> a minimální hodinové sazby z <span>55.00 na <strong>58.70 Kč</strong></span>. Minimální mzda se zvýší také pro zdravotně postižené zaměstnance z 8.000 na 9.300 Kč.</p>
-     </div>
-    <% i+=1%><h2 id="<%= i %>"><a class="link">Kontrolní hlášení DPH od roku 2016</a></h2>
-     <div class = "content">
-       <p><strong>Všichni plátci DPH registrovaní v tuzemsku musí od ledna 2016 podávat kromě daňového přiznání k DPH také kontrolní hlášení.</strong></p>
-       <p>V kontrolním hlášení se budou uvádět údaje z vystavených i přijatých daňových dokladů, a to i ze zjednodušených a dalších dokladů (kromě ZD a DPH navíc<strong> DIČ dodavatele či odběratele a datum zdanitelného plnění</strong>, a to jednotlivě pro každé zdanitelné plnění zvlášť).</p>
-       <h3>Kdy a jak musíme kontrolní hlášení podat</h3>
-       <p>vždy, když pro něj existuje náplň. Do kontrolního hlášení se promítnou všechny transakce, které dáváme souhrnně do přiznání k DPH, ale jen ty, které mají zdanitelné plnění v Česku. A neuvádíme plnění osvobozená. </p>
-       <p>Kontrolní hlášení podáme pouze elektronicky.</p>
-       <h3>Lhůty pro podání kontrolního hlášení</h3>
-       <p>Sledovaným obdobím je <strong>v případě právnických osob kalendářní měsíc. V případě fyzických osob se sledované období řídí podle   zdaňovacího období pro účely podání daňového přiznání k DPH. </strong></p>
-       <p>Kontrolní hlášení může být <strong>řádné</strong> nebo <strong>opravné</strong> (nahrazuje-li řádné kontrolní hlášení a je podáno ve lhůtě pro podání řádného kontrolního hlášení), popřípadě následné, které se podává v případech opravy původně uvedených údajů po uplynutí lhůty pro řádné kontrolní hlášení. Následné kontrolní hlášení je nutné podat do 5 pracovních dnů ode dne zjištění nesprávných nebo neúplných údajů uvedených v již podaném kontrolním hlášení.</p>
-       <h3>Opravné a následné kontrolní hlášení</h3>
-       <p>Před uplynutím lhůty k podání kontrolního hlášení budeme moci nahradit již podané kontrolní hlášení opravným kontrolním hlášením, k předchozímu kontrolnímu hlášení se nebude přihlížet.</p>
-       <h3>Sankce</h3>
-       <p>Pokud nepodáme kontrolní hlášení ve stanovené lhůtě, zaplatíme pokutu ve výši</p>
-       <ul>
-         <li>1000 Kč, pokud jej dodatečně podáme, aniž bychom k tomu byli vyzváni</li>
-         <li>10000 Kč, pokud jej podáme v náhradní lhůtě poté, co nás k tomu správcem daně vyzve</li>
-         <li>30000 Kč, pokud jej nepodáme na základě výzvy ke změně, doplnění či potvrzení údajů uvedených v podaném kontrolním hlášení, nebo</li>
-         <li>50000 Kč, pokud jej nepodáme ani v náhradní lhůtě</li>
-       </ul>
-   </div>
-   <% i+=1%><h2 id="<%= i %>"><a class="link">OČR</a></h2>
-   <div class="content">
-   <h3>
-   Podmínky nároku na ošetřovné</h3>
-   <p>
-   Nárok na ošetřovné má zaměstnanec z důvodu</p>
-   <p>
-   1) ošetřování</p>
-   <ul>
-   <li>nemocného dítěte mladšího 10 let,</li>
-   <li>jiného nemocného člena domácnosti, jehož zdravotní stav vyžaduje nezbytně ošetřování
-   jinou osobou,</li>
-   </ul>
-   <p>
-   2) péče o dítě mladší 10 let, protože</p>
-   <ul>
-   <li>školské zařízení je uzavřeno z důvodu havárie, mimořádného opatření při epidemii
-   nebo jiné nepředvídané události,</li>
-   <li>dítě nemůže být pro nařízenou karanténu v péči školského zařízení, </li>
-   <li>osoba, která jinak o dítě pečuje, onemocněla a proto nemůže o dítě pečovat.</li>
-   </ul>
-   <p>
-   Nárok na ošetřovné nemají například zaměstnanci činní na základě dohody o pracovní
-   činnosti, dohody o provedení práce nebo zaměstnanci účastní pojištění z důvodu výkonu
-   zaměstnání malého rozsahu.</p>
-   <h3>
-   Podpůrčí doba</h3>
-   <p>
-   Podpůrčí doba u ošetřovného činí nejdéle</p>
-   <ul>
-   <li>9 kalendářních dnů,</li>
-   <li>16 kalendářních dnů, jde-li o osamělého zaměstnance, který má v trvalé péči aspoň
-   jedno dítě ve věku do 16 let, které neukončilo povinnou školní docházku.</li>
-   </ul>
-   <p>
-   Za osamělého zaměstnance se pro účely ošetřovného považuje zaměstnanec svobodný,
-   ovdovělý nebo rozvedený, pokud nežije s družkou (druhem) nebo v registrovaném partnerství.</p>
-   <p>
-   Běh podpůrčí doby u ošetřovného se staví po dobu poskytování zdravotních služeb
-   ošetřované osobě u poskytovatele lůžkové péče.</p>
-   <h3>
-   Výše ošetřovného</h3>
-   <p>
-   Výše ošetřovného za kalendářní den činí 60 % denního vyměřovacího základu. Ošetřovné
-   vyplácí ČSSZ.</p>
-   <h3>
-   Rozhodnutí o potřebě ošetřování (péče)</h3>
-   <p>
-   Tiskopis má dva propisovací díly.</p>
-   <p>
-   <strong>I. díl </strong>– Rozhodnutí o vzniku potřeby ošetřování (péče) – žádost
-   o ošetřovné</p>
-   <ul>
-   <li>Tento díl předává ošetřující lékař osobě, která potřebuje ošetřování. Jde-li o nemocné
-   dítě předává tiskopis osobě, která je k ošetření doprovází. Pojištěnec uplatňující
-   nárok na ošetřovné předává tento doklad po doplnění části B svému zaměstnavateli,
-   který jej spolu s vyplněným tiskopisem Příloha k žádosti o ošetřovné a potvrzením
-   o trvání potřeby ošetřování nebo s rozhodnutím o ukončení potřeby ošetřování předá
-   příslušné OSSZ.</li></ul>
-   <p>
-   <strong>II. díl </strong>– Rozhodnutí o ukončení potřeby ošetřování (péče)</p>
-   <ul>
-   <li>Ošetřující lékař v tomto díle doplní poslední den potřeby ošetřování (péče) a předá
-   jej osobě, která potřebovala ošetřování (osobě, která ji doprovází). Ošetřující
-   lékař může rozhodnout o ukončení potřeby ošetřování nejvýše tři kalendářní dny dopředu
-   ode dne, kdy vyšetřením zjistil, že potřeba ošetřování (péče) pominula, resp. pomine.
-   Pojištěnec vyplní údaje v části B tohoto dílu rozhodnutí. Tiskopis předá svému zaměstnavateli,
-   který jej po doplnění údajů v části C zašle příslušné OSSZ.</li></ul>
-   <h3>
-   Potvrzení o trvání potřeby ošetřování (péče)</h3>
-   <p>
-   Tímto tiskopisem zaměstnanec prokazuje trvání potřeby ošetřování člena domácnosti.
-   Lékař jej vystavuje na požádání zaměstnance, zejména v případech, kdy se osoby v
-   ošetřování (péči) o člena domácnosti vystřídaly anebo v případech, kdy jde o dlouhodobě
-   trvající potřebu ošetřování. Trvání potřeby ošetřování se potvrzuje ke dni vystavení
-   tohoto tiskopisu.</p>
-   </div>
-
-
-
-    <% i+=1%><h2 id="<%= i %>"><a class="link">Vracení DPH ze zboží prodaného cizincům</a></h2>
     <div class = "content">
+      <a href="/files/Pokyn_GFR_D-22.pdf">Pokyn GFŘ D-22 k dani z příjmu</a>
+
+    </div>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">Zvýšení minimální mzdy od 1.1.2016</a></h2>
+    <div class = "content">
+      <p>Od 1. 1. 2016 dojde ke zvýšení měsíční minimální mzdy z <span>9.200 na <strong>9.900 Kč</strong></span> a minimální hodinové sazby z <span>55.00 na <strong>58.70 Kč</strong></span>. Minimální mzda se zvýší také pro zdravotně postižené zaměstnance z 8.000 na 9.300 Kč.</p>
+    </div>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">Kontrolní hlášení DPH od roku 2016</a></h2>
+    <div class = "content">
+      <p><strong>Všichni plátci DPH registrovaní v tuzemsku musí od ledna 2016 podávat kromě daňového přiznání k DPH také kontrolní hlášení.</strong></p>
+      <p>V kontrolním hlášení se budou uvádět údaje z vystavených i přijatých daňových dokladů, a to i ze zjednodušených a dalších dokladů (kromě ZD a DPH navíc<strong> DIČ dodavatele či odběratele a datum zdanitelného plnění</strong>, a to jednotlivě pro každé zdanitelné plnění zvlášť).</p>
+      <h3>Kdy a jak musíme kontrolní hlášení podat</h3>
+      <p>vždy, když pro něj existuje náplň. Do kontrolního hlášení se promítnou všechny transakce, které dáváme souhrnně do přiznání k DPH, ale jen ty, které mají zdanitelné plnění v Česku. A neuvádíme plnění osvobozená. </p>
+      <p>Kontrolní hlášení podáme pouze elektronicky.</p>
+      <h3>Lhůty pro podání kontrolního hlášení</h3>
+      <p>Sledovaným obdobím je <strong>v případě právnických osob kalendářní měsíc. V případě fyzických osob se sledované období řídí podle   zdaňovacího období pro účely podání daňového přiznání k DPH. </strong></p>
+      <p>Kontrolní hlášení může být <strong>řádné</strong> nebo <strong>opravné</strong> (nahrazuje-li řádné kontrolní hlášení a je podáno ve lhůtě pro podání řádného kontrolního hlášení), popřípadě následné, které se podává v případech opravy původně uvedených údajů po uplynutí lhůty pro řádné kontrolní hlášení. Následné kontrolní hlášení je nutné podat do 5 pracovních dnů ode dne zjištění nesprávných nebo neúplných údajů uvedených v již podaném kontrolním hlášení.</p>
+      <h3>Opravné a následné kontrolní hlášení</h3>
+      <p>Před uplynutím lhůty k podání kontrolního hlášení budeme moci nahradit již podané kontrolní hlášení opravným kontrolním hlášením, k předchozímu kontrolnímu hlášení se nebude přihlížet.</p>
+      <h3>Sankce</h3>
+      <p>Pokud nepodáme kontrolní hlášení ve stanovené lhůtě, zaplatíme pokutu ve výši</p>
       <ul>
-        <li>Pořízené (nakoupené) zboží musí být <strong>vyvezeno do 3 kalendářních měsíců</strong> bylo zakoupeno a současně nárok na vrácení daně musí být uplatněn u prodávajícího do 6 kalendářních měsíců od konce měsíce, kdy bylo uskutečněno zdanitelné plnění. Oba tyto okamžiky se posuzují podle data uskutečnění zdanitelného plnění uvedeného na dokladu o prodeji zboží.
-</li>
-          <li>Prodejní cena nakoupeného zboží u jednoho prodejce v jednom kalendářním dni musí být <strong>více jak 2.000 Kč vč. DPH</strong>, zboží <strong>nesmí mít obchodní charakter</strong> a musí být vyvezeno v rámci cestovního styku.</li>
-          <li>Kupující nesmí mít bydliště (resp. místo pobytu) v ČR, ani jinde v Evropském společenství, přičemž místo jeho pobytu ve třetí zemi by mělo být zapsáno v cestovním dokladu (většinou pasu) a dále <strong>nesmí kupující uskutečňovat v tuzemsku ekonomickou činnost</strong>.</li>
-            <li>Stále zůstává v platnosti povinnost<strong> nechat potvrdit výstup zboží</strong> z Evropského společenství celním úřadem na dokladu o prodeji.</li>
-          </ul>
-    <h3>Změna pravidel od 1. dubna 2013</h3>
-    <p><strong>Od 1. 4. 2013</strong> byla zákonem č. 502/2012 Sb., který novelizoval ZDPH, změněna pravidla v uplatňování nároku na vrácení daně fyzickým osobám ze třetích zemí. Touto novelou byla mj.  <strong>zrušena povinnost vyplňování, předkládání a potvrzování tiskopisu</strong> č. 25 5235 ministerstva financí.</p>
-
-    <p>Prodávající má <strong>nově povinnost</strong> vystavit na vyžádání zahraniční fyzické osoby (kupujícího) doklad o prodeji zboží <strong>ve dvou vyhotoveních</strong> s tím, že na prvním uvede údaj „VAT REFUND“ („originál dokladu o prodeji“) a na druhém dokladu údaj „COPY“ (viz § 84 odst. 3 ZDPH <strong>platného od 1. 4. 2013</strong>). Kromě těchto popisů „VAT REFUND“ a „COPY“ se musí jednat o <strong> obsahově i vizuálně totožná vyhotovení dokladu</strong> o prodeji zboží.</p>
-
-    <p>Doklad o prodeji musí dále obsahovat údaje o kupujícím, jako je jméno a příjmení, místo pobytu zahraniční fyzické osoby, která zboží vyveze, jakožto další standardní náležitosti daňových dokladů podle ZDPH (např. identifikaci dodavatele / prodávajícího, rozsah a předmět plnění, evidenční číslo dokladu, datum uskutečnění zdanitelného plnění, sazbu a výši DPH, základ daně, cenu celkem vč. DPH).</p>
-
-    <p>Celní úřad potvrdí výstup zboží mimo Evropské společenství na prvním vyhotovení dokladu o prodeji s údajem „VAT REFUND“ a splnění podmínek pro vracení daně. <strong>Nepotvrzuje</strong> tedy již na formuláři ministerstva financí. Doposud byl celní úřad povinen potvrdit jak doklad o prodeji zboží, tak i předepsaný tiskopis.</p>
-
-    <p>ZDPH výslovně <strong>neupravuje formu ani vzhled dokladu o prodeji zboží</strong>. Nicméně definuje, co musí obsahovat daňové doklady. Pro účely vracení DPH dle § 84 ZDPH může sloužit „jakýkoliv dokument“ obsahující předepsané náležitosti a informace dle ZDPH.</p>
-
-    <p>Doklad o prodeji zboží <strong>nemusí být nutně totožný</strong> s paragonem, účtenkou, pokladním dokladem, zjednodušeným daňovým dokladem či jiným typem daňového dokladu dle § 26 a násl. ZDPH.</p>
-
-    <p>Jednou z povinných náležitostí dokladu o prodeji zboží je po novele mimo jiné i rozsah a předmět zdanitelného plnění. <strong>Rozsah a předmět zdanitelného plnění</strong> musí být na dokladu o prodeji uveden natolik konkrétně, aby celní úřad mohl potvrdit výstup zboží z Evropského společenství.</p>
-  </div>
-
-
-
-
-
-
-
-
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Dodanění závazků</a></h2>
-<div class="content">
-<p>Dlužník je povinen zvýšit základ daně o neuhrazené závazky, které jsou více než <strong>30 měsíců po splatnosti</strong> u závazků vzniklých po 1.1.2015.</p>
-<p>Pro závazky, které vznikly před tímto datem, bude plati stará lhůta <strong>36 měsíců</strong>.</p>
-<p><u>§ 23 odst. 3 písm. a) bod 12 ZDP</u>  -> zvýší se účetní výsledek hospodaření za zdaňovací období kalendářního roku daňovém přiznání zápisem do <strong>řádku 30</strong>, který blíže rozvede na zvláštní příloze. Protože jde pouze o daňovou úpravu „základu daně“ pro účely daně z příjmů, nebude dlužník o tomto dodanění samostatně účtovat</p>
-</div>
-
-
-
-
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Snížení limitu pro platby v hotovosti</a></h2>
-<div class="content">
-<p>Novelou zákona číslo 254/2004 Sb., o omezení plateb v hotovosti, se snižuje limit pro platby v hotovosti <strong>z dosavadních 350.000 Kč na 270.000 Kč</strong>. Bude se vztahovat i na případy, kdy závazek zaplatit teprve vzniká, tedy na dary a půjčky. Zákon výslovně stanoví, že příjemce je povinen odmítnout hotovostní platbu nad nově stanovený limit. Novela je součástí zákona, kterým se mění některé zákony v oblasti finančního trhu. Účinnost se předpokládá od 1. 12. 2014.</p>
-</div>
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Dovoz zboží ze zemí mimo EU</a></h2>
-<div class="content">
-  <p>Při dovozu zboží ze třetích zemí jsou důležité hranice pro osvobození cla a DPH. Zboží v úhrnné hodnotě nepřesahující 22 EUR je osvobozeno od cla i DPH, zboží nad 22 EUR do 150 EUR je osvobozeno od cla, ale bude vyměřena DPH a zboží nad 150 EUR je bez osvobození, tzn. bude vyměřeno clo i DPH.</p>
-</div>
-
-
-
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Sleva na manžela/manželku</a></h2>
-<div class="content">
-    <p>pokud nemá vlastní příjem přesahující za zdaňovací období 68 000,- (§ 35ba/1/a ZDP)</p>
-    <p><strong>Příjmy, které se do příjmu manžela či manželky nezahrnují (úplný výčet):</strong></p>
-    <ul>
-      <li>dávky státní sociální podpory,</li>
-      <li>dávky pěstounské péče (nejedná se odměny pěstouna),</li>
-      <li>dávky osobám se zdravotním postižením,</li>
-      <li>dávky pomoci v hmotné nouzi,</li>
-      <li>příspěvek na péči, sociální služby,</li>
-      <li>státní příspěvky na penzijní připojištění se státním příspěvkem,</li>
-      <li>státní příspěvky na doplňkové penzijní spoření,</li>
-      <li>státní příspěvky podle zákona o stavebním spoření,</li>
-      <li>stipendium poskytované studujícím soustavně se připravujícím na budoucí povolání,</li>
-      <li>příjem plynoucí z důvodu péče o blízkou nebo jinou osobu, která má nárok na příspěvek na péči podle zákona o sociálních službách, který je od daně osvobozen.</li>
-    </ul>
-    <p><strong>Příjmy, které se do příjmů manžela či manželky zahrnují (namátkový výčet, často chybně uplatňovaných):</strong></p>
-    <ul>
-      <li>veškeré příjmy "v hrubém" od zaměstnavatele, z podnikání, z nájmu atd.,</li>
-      <li>včetně příjmů od daně osvobozených např. prodej nemovitosti, auta, cenných papírů,</li>
-      <li>všechny druhy důchodů,</li>
-      <li>nemocenská,</li>
-      <li>náhrada mzdy při pracovní neschopnosti,</li>
-      <li>ošetřování člena rodiny,</li>
-      <li>podpora v nezaměstnanosti,</li>
-      <li>peněžitá pomoc v mateřství,</li>
-      <li>odměny pěstouna.</li>
-    </ul>
-</div>
-
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Archivace</a></h2>
-<div class="content">
-<p>
-<strong>Z hlediska účetních předpisů </strong>stanoví zákon č. 563/1991 Sb., o účetnictví,
-v § 31 lhůty, po které je nutno uschovávat účetní záznamy.
-</p>
-<p>
-<strong>Z hlediska daňových předpisů </strong>je třeba příslušné doklady archivovat
-po celou dobu, po kterou neskončila lhůta pro vyměření daně.<strong> Základní lhůta</strong>
-je stanovena na <span>3 roky po uplynutí roku, v němž vznikla daňová povinnost</span>.
-</p>
-<p>
-Tato lhůta se <strong>prodlužuje</strong> v případě přijetí investiční pobídky formou
-poskytnutí slevy na dani na celou dobu uplatňování této slevy, dále <strong>při uplatňování
-ztráty minulých let</strong>, včetně roku vzniku ztráty, a při nesplnění podmínek
-pro uznání nákladů <strong>u finančního leasingu</strong>, kdy začíná lhůta pro
-doměření daně běžet od konce kalendářního roku, v němž bylo možno poprvé ověřit
-splnění těchto podmínek. Tato lhůta může skutečně být <span>až 11 let</span>. Ustanovení
-§ 38r ZDP možné lhůty pro vyměření či dodatečné vyměření daně proti § 47 ZSDP prodlužuje.
-Doplněním odst. 4 do tohoto ustanovení byl pouze potvrzen původní záměr, aby tyto
-lhůty byly platné pro všechny poplatníky vykazující daňovou ztrátu či pořizující
-majetek formou finančního leasingu, a nikoliv pouze pro poplatníky čerpající investiční
-pobídky, jak bylo z původního znění tohoto ustanovení dovozováno. <strong>Pokud však
-  poplatník nepatří mezi výše uvedené poplatníky, tedy pokud nedostal investiční pobídku,
-  nevykázal daňovou ztrátu ani nepořídil majetek formou finančního leasingu, tato
-  prodloužená lhůta se ho netýká</strong>.
-</p>
-<p>
-  <a href="http://www.archivovani.cz/skartacni-lhuty">Skartační lhůty</a></p>
-</div>
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci bez náhrady mzdy podle nařízení vlády číslo 590/2006 Sb.</a></h2>
-<div class="content">
-              <span>Vyšetření nebo ošetření</span>
-              <ul>
-                  <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu nepřísluší za dobu přesahující dobu, za kterou by vyšetření bylo provedeno v nejbližším zdravotnickém zařízení.</li>
-                  <li>které bylo možné provést mimo pracovní dobu.</li>
-              </ul>
-              <span>Přerušení dopravního provozu nebo zpoždění hromadných dopravních prostředků</span>
-              <ul>
-                  <li>nemohl-li zaměstnanec dosáhnout včas místa pracoviště jiným přiměřeným způsobem.</li>
-              </ul>
-              <span>Svatba</span>
-              <ul>
-                  <li>v případě poskytnutí pracovního volna na 2 dny na vlastní svatbu, za 1 den z těchto 2 dnů náhrada mzdy nepřísluší.</li>
-                  <li>1 den dítěti při svatbě rodičů.</li>
-              </ul>
-              <span>Narození dítěte</span>
-              <ul>
-                  <li>účast při porodu manželky (družky).</li>
-              </ul>
-              <span>Přestěhování</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu, nejvýše na 2 dny, při přestěhování zaměstnance, který má vlastní bytové zařízení.</li>
-              </ul>
-              <span>Vyhledání nového zaměstnání</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu odpovídající výpovědní době v délce 2 měsíců.</li>
-              </ul>
-              <span>Doprovod</span>
-              <ul>
-                  <li>doprovod rodinných příslušníků, mimo manžela, druha, dítěte, rodiče a prarodiče zaměstnance nebo jeho manžela, do zdravotnického zařízení k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení.</li>
-                  <li>doprovod dítěte do školského poradenského zařízení je zjištění speciálních vzdělávacích potřeb dítěte.</li>
-              </ul>
-</div>
-
-<% i+=1%><h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci s náhradou mzdy</a></h2>
-<div class="content">
-              <span>Vyšetření nebo ošetření</span><br>
-              na nezbytně nutnou dobu, bylo-li vyšetření nebo ošetření provedeno ve zdravotnickém zařízení, které je ve smluvním vztahu ke zdravotní pojišťovně, kterou si zaměstnanec zvolil, a které je <strong>nejblíže </strong>bydlišti nebo pracovišti zaměstnance a je schopné potřebnou zdravotní péči poskytnout, pokud vyšetření nebo ošetření nebylo možné provést <strong>mimo pracovní dobu</strong>.
-      <ul>
-          <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu však přísluší nejvýše za dobu podle předchozího odstavce.</li>
+        <li>1000 Kč, pokud jej dodatečně podáme, aniž bychom k tomu byli vyzváni</li>
+        <li>10000 Kč, pokud jej podáme v náhradní lhůtě poté, co nás k tomu správcem daně vyzve</li>
+        <li>30000 Kč, pokud jej nepodáme na základě výzvy ke změně, doplnění či potvrzení údajů uvedených v podaném kontrolním hlášení, nebo</li>
+        <li>50000 Kč, pokud jej nepodáme ani v náhradní lhůtě</li>
       </ul>
-              <span>Pracovnělékařská prohlídka, vyšetření nebo očkování související s výkonem práce</span>
-
-              <ul>
-                  <li>na nezbytně nutnou dobu v rozsahu stanoveném zvláštními právními předpisy nebo rozhodnutím příslušného orgánu ochrany veřejného zdraví.</li>
+    </div>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">OČR</a></h2>
+    <div class="content">
+      <h3>
+        Podmínky nároku na ošetřovné</h3>
+        <p>
+          Nárok na ošetřovné má zaměstnanec z důvodu</p>
+          <p>
+            1) ošetřování</p>
+            <ul>
+              <li>nemocného dítěte mladšího 10 let,</li>
+              <li>jiného nemocného člena domácnosti, jehož zdravotní stav vyžaduje nezbytně ošetřování
+                jinou osobou,</li>
               </ul>
-              <span>Znemožnění cesty do zaměstnání</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu, nejvýše na 1 den, z povětrnostních důvodů nehromadným dopravním prostředkem, který používá těžce zdravotně postižený zaměstnanec.</li>
-              </ul>
+              <p>
+                2) péče o dítě mladší 10 let, protože</p>
+                <ul>
+                  <li>školské zařízení je uzavřeno z důvodu havárie, mimořádného opatření při epidemii
+                    nebo jiné nepředvídané události,</li>
+                    <li>dítě nemůže být pro nařízenou karanténu v péči školského zařízení, </li>
+                    <li>osoba, která jinak o dítě pečuje, onemocněla a proto nemůže o dítě pečovat.</li>
+                  </ul>
+                  <p>
+                    Nárok na ošetřovné nemají například zaměstnanci činní na základě dohody o pracovní
+                    činnosti, dohody o provedení práce nebo zaměstnanci účastní pojištění z důvodu výkonu
+                    zaměstnání malého rozsahu.</p>
+                    <h3>
+                      Podpůrčí doba</h3>
+                      <p>
+                        Podpůrčí doba u ošetřovného činí nejdéle</p>
+                        <ul>
+                          <li>9 kalendářních dnů,</li>
+                          <li>16 kalendářních dnů, jde-li o osamělého zaměstnance, který má v trvalé péči aspoň
+                            jedno dítě ve věku do 16 let, které neukončilo povinnou školní docházku.</li>
+                          </ul>
+                          <p>
+                            Za osamělého zaměstnance se pro účely ošetřovného považuje zaměstnanec svobodný,
+                            ovdovělý nebo rozvedený, pokud nežije s družkou (druhem) nebo v registrovaném partnerství.</p>
+                            <p>
+                              Běh podpůrčí doby u ošetřovného se staví po dobu poskytování zdravotních služeb
+                              ošetřované osobě u poskytovatele lůžkové péče.</p>
+                              <h3>
+                                Výše ošetřovného</h3>
+                                <p>
+                                  Výše ošetřovného za kalendářní den činí 60 % denního vyměřovacího základu. Ošetřovné
+                                  vyplácí ČSSZ.</p>
+                                  <h3>
+                                    Rozhodnutí o potřebě ošetřování (péče)</h3>
+                                    <p>
+                                      Tiskopis má dva propisovací díly.</p>
+                                      <p>
+                                        <strong>I. díl </strong>– Rozhodnutí o vzniku potřeby ošetřování (péče) – žádost
+                                        o ošetřovné</p>
+                                        <ul>
+                                          <li>Tento díl předává ošetřující lékař osobě, která potřebuje ošetřování. Jde-li o nemocné
+                                            dítě předává tiskopis osobě, která je k ošetření doprovází. Pojištěnec uplatňující
+                                            nárok na ošetřovné předává tento doklad po doplnění části B svému zaměstnavateli,
+                                            který jej spolu s vyplněným tiskopisem Příloha k žádosti o ošetřovné a potvrzením
+                                            o trvání potřeby ošetřování nebo s rozhodnutím o ukončení potřeby ošetřování předá
+                                            příslušné OSSZ.</li></ul>
+                                            <p>
+                                              <strong>II. díl </strong>– Rozhodnutí o ukončení potřeby ošetřování (péče)</p>
+                                              <ul>
+                                                <li>Ošetřující lékař v tomto díle doplní poslední den potřeby ošetřování (péče) a předá
+                                                  jej osobě, která potřebovala ošetřování (osobě, která ji doprovází). Ošetřující
+                                                  lékař může rozhodnout o ukončení potřeby ošetřování nejvýše tři kalendářní dny dopředu
+                                                  ode dne, kdy vyšetřením zjistil, že potřeba ošetřování (péče) pominula, resp. pomine.
+                                                  Pojištěnec vyplní údaje v části B tohoto dílu rozhodnutí. Tiskopis předá svému zaměstnavateli,
+                                                  který jej po doplnění údajů v části C zašle příslušné OSSZ.</li></ul>
+                                                  <h3>
+                                                    Potvrzení o trvání potřeby ošetřování (péče)</h3>
+                                                    <p>
+                                                      Tímto tiskopisem zaměstnanec prokazuje trvání potřeby ošetřování člena domácnosti.
+                                                      Lékař jej vystavuje na požádání zaměstnance, zejména v případech, kdy se osoby v
+                                                      ošetřování (péči) o člena domácnosti vystřídaly anebo v případech, kdy jde o dlouhodobě
+                                                      trvající potřebu ošetřování. Trvání potřeby ošetřování se potvrzuje ke dni vystavení
+                                                      tohoto tiskopisu.</p>
+                                                    </div>
 
-              <span>Svatba</span>
-              <ul>
-                  <li>pracovní volno se poskytne na 2 dny na vlastní svatbu, z toho 1 den k účasti na svatebním obřadu; náhrada mzdy nebo platu přísluší však pouze za 1 den z těchto dnů.</li>
-                  <li>rodiči na 1 den k účasti na svatbě dítěte</li>
-              </ul>
 
-              <span>Narození dítěte</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu <strong>k převozu manželky</strong> (družky) do zdravotnického zařízení a zpět.</li>
-              </ul>
 
-              <span>Úmrtí</span>
-              <ul>
-                  <li><strong>2 dny při úmrtí</strong> manžela, druha nebo dítěte a na<strong> další den k účasti na pohřbu</strong> těchto osob,</li>
-                  <li><strong>1 den k účasti na pohřbu</strong> rodiče a sourozence zaměstnance, rodiče a sourozence jeho manžela, jakož i manžela dítěte nebo manžela sourozence zaměstnance a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob,</li>
-                  <li>na nezbytně nutnou dobu, nejvýše na 1 den, k účasti na pohřbu prarodiče nebo vnuka zaměstnance nebo prarodiče jeho manžela nebo jiné osoby, která sice nepatří k uvedeným fyzickým osobám, ale žila se zaměstnancem v době úmrtí v domácnosti, a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob.</li>
-              </ul>
+                                                    <% i+=1%><h2 id="<%= i %>"><a class="link">Vracení DPH ze zboží prodaného cizincům</a></h2>
+                                                    <div class = "content">
+                                                      <ul>
+                                                        <li>Pořízené (nakoupené) zboží musí být <strong>vyvezeno do 3 kalendářních měsíců</strong> bylo zakoupeno a současně nárok na vrácení daně musí být uplatněn u prodávajícího do 6 kalendářních měsíců od konce měsíce, kdy bylo uskutečněno zdanitelné plnění. Oba tyto okamžiky se posuzují podle data uskutečnění zdanitelného plnění uvedeného na dokladu o prodeji zboží.
+                                                        </li>
+                                                        <li>Prodejní cena nakoupeného zboží u jednoho prodejce v jednom kalendářním dni musí být <strong>více jak 2.000 Kč vč. DPH</strong>, zboží <strong>nesmí mít obchodní charakter</strong> a musí být vyvezeno v rámci cestovního styku.</li>
+                                                        <li>Kupující nesmí mít bydliště (resp. místo pobytu) v ČR, ani jinde v Evropském společenství, přičemž místo jeho pobytu ve třetí zemi by mělo být zapsáno v cestovním dokladu (většinou pasu) a dále <strong>nesmí kupující uskutečňovat v tuzemsku ekonomickou činnost</strong>.</li>
+                                                        <li>Stále zůstává v platnosti povinnost<strong> nechat potvrdit výstup zboží</strong> z Evropského společenství celním úřadem na dokladu o prodeji.</li>
+                                                      </ul>
+                                                      <h3>Změna pravidel od 1. dubna 2013</h3>
+                                                      <p><strong>Od 1. 4. 2013</strong> byla zákonem č. 502/2012 Sb., který novelizoval ZDPH, změněna pravidla v uplatňování nároku na vrácení daně fyzickým osobám ze třetích zemí. Touto novelou byla mj.  <strong>zrušena povinnost vyplňování, předkládání a potvrzování tiskopisu</strong> č. 25 5235 ministerstva financí.</p>
 
-              <span>Doprovod</span>
-              <ul>
-                  <li>manžela, druha nebo dítěte, jakož i rodiče a prarodiče zaměstnance <strong>do zdravotnického zařízení</strong> k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 1 den, byl-li doprovod nezbytný a uvedené úkony nebylo možno provést mimo pracovní dobu,</li>
-                  <li>zdravotně postiženého dítěte do zařízení sociálních služeb nebo do školy nebo školského zařízení samostatně zřízených pro žáky se zdravotním postižením s internátním provozem a zpět se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 6 pracovních dnů v kalendářním roce.</li>
-              </ul>
+                                                      <p>Prodávající má <strong>nově povinnost</strong> vystavit na vyžádání zahraniční fyzické osoby (kupujícího) doklad o prodeji zboží <strong>ve dvou vyhotoveních</strong> s tím, že na prvním uvede údaj „VAT REFUND“ („originál dokladu o prodeji“) a na druhém dokladu údaj „COPY“ (viz § 84 odst. 3 ZDPH <strong>platného od 1. 4. 2013</strong>). Kromě těchto popisů „VAT REFUND“ a „COPY“ se musí jednat o <strong> obsahově i vizuálně totožná vyhotovení dokladu</strong> o prodeji zboží.</p>
 
-              <span>Pohřeb spoluzaměstnance</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu zaměstnancům, kteří se zúčastní pohřbu spoluzaměstnance; tyto zaměstnance určí zaměstnavatel nebo zaměstnavatel v dohodě s odborovou organizací.</li>
-              </ul>
+                                                      <p>Doklad o prodeji musí dále obsahovat údaje o kupujícím, jako je jméno a příjmení, místo pobytu zahraniční fyzické osoby, která zboží vyveze, jakožto další standardní náležitosti daňových dokladů podle ZDPH (např. identifikaci dodavatele / prodávajícího, rozsah a předmět plnění, evidenční číslo dokladu, datum uskutečnění zdanitelného plnění, sazbu a výši DPH, základ daně, cenu celkem vč. DPH).</p>
 
-              <span>Přestěhování</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu, nejvýše na 2 dny, jde-li o přestěhování v zájmu zaměstnavatele.</li>
-              </ul>
+                                                      <p>Celní úřad potvrdí výstup zboží mimo Evropské společenství na prvním vyhotovení dokladu o prodeji s údajem „VAT REFUND“ a splnění podmínek pro vracení daně. <strong>Nepotvrzuje</strong> tedy již na formuláři ministerstva financí. Doposud byl celní úřad povinen potvrdit jak doklad o prodeji zboží, tak i předepsaný tiskopis.</p>
 
-              <span>Vyhledání nového zaměstnání</span>
-              <ul>
-                  <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu před skončením pracovního poměru výpovědí danou zaměstnavatelem z důvodů uvedených v § 52 písm. a) až e) zákoníku práce, nebo dohodou z týchž důvodů. Pracovní volno je možné se souhlasem zaměstnavatele slučovat.</li>
-              </ul>
+                                                      <p>ZDPH výslovně <strong>neupravuje formu ani vzhled dokladu o prodeji zboží</strong>. Nicméně definuje, co musí obsahovat daňové doklady. Pro účely vracení DPH dle § 84 ZDPH může sloužit „jakýkoliv dokument“ obsahující předepsané náležitosti a informace dle ZDPH.</p>
 
-</div>
-  </article>
-</section>
+                                                      <p>Doklad o prodeji zboží <strong>nemusí být nutně totožný</strong> s paragonem, účtenkou, pokladním dokladem, zjednodušeným daňovým dokladem či jiným typem daňového dokladu dle § 26 a násl. ZDPH.</p>
+
+                                                      <p>Jednou z povinných náležitostí dokladu o prodeji zboží je po novele mimo jiné i rozsah a předmět zdanitelného plnění. <strong>Rozsah a předmět zdanitelného plnění</strong> musí být na dokladu o prodeji uveden natolik konkrétně, aby celní úřad mohl potvrdit výstup zboží z Evropského společenství.</p>
+                                                    </div>
+
+                                                    <% i+=1  %><h2 id="<%= i %>"><a class="link">Dodanění závazků</a></h2>
+                                                    <div class="content">
+                                                      <p>Dlužník je povinen zvýšit základ daně o neuhrazené závazky, které jsou více než <strong>30 měsíců po splatnosti</strong> u závazků vzniklých po 1.1.2015.</p>
+                                                      <p>Pro závazky, které vznikly před tímto datem, bude plati stará lhůta <strong>36 měsíců</strong>.</p>
+                                                      <p><u>§ 23 odst. 3 písm. a) bod 12 ZDP</u>  -> zvýší se účetní výsledek hospodaření za zdaňovací období kalendářního roku daňovém přiznání zápisem do <strong>řádku 30</strong>, který blíže rozvede na zvláštní příloze. Protože jde pouze o daňovou úpravu „základu daně“ pro účely daně z příjmů, nebude dlužník o tomto dodanění samostatně účtovat</p>
+                                                    </div>
+
+
+
+
+
+                                                    <% i+=1%><h2 id="<%= i %>"><a class="link">Snížení limitu pro platby v hotovosti</a></h2>
+                                                    <div class="content">
+                                                      <p>Novelou zákona číslo 254/2004 Sb., o omezení plateb v hotovosti, se snižuje limit pro platby v hotovosti <strong>z dosavadních 350.000 Kč na 270.000 Kč</strong>. Bude se vztahovat i na případy, kdy závazek zaplatit teprve vzniká, tedy na dary a půjčky. Zákon výslovně stanoví, že příjemce je povinen odmítnout hotovostní platbu nad nově stanovený limit. Novela je součástí zákona, kterým se mění některé zákony v oblasti finančního trhu. Účinnost se předpokládá od 1. 12. 2014.</p>
+                                                    </div>
+
+                                                    <% i+=1%><h2 id="<%= i %>"><a class="link">Dovoz zboží ze zemí mimo EU</a></h2>
+                                                    <div class="content">
+                                                      <p>Při dovozu zboží ze třetích zemí jsou důležité hranice pro osvobození cla a DPH. Zboží v úhrnné hodnotě nepřesahující 22 EUR je osvobozeno od cla i DPH, zboží nad 22 EUR do 150 EUR je osvobozeno od cla, ale bude vyměřena DPH a zboží nad 150 EUR je bez osvobození, tzn. bude vyměřeno clo i DPH.</p>
+                                                    </div>
+
+
+
+
+                                                    <% i+=1%><h2 id="<%= i %>"><a class="link">Sleva na manžela/manželku</a></h2>
+                                                    <div class="content">
+                                                      <p>pokud nemá vlastní příjem přesahující za zdaňovací období 68 000,- (§ 35ba/1/a ZDP)</p>
+                                                      <p><strong>Příjmy, které se do příjmu manžela či manželky nezahrnují (úplný výčet):</strong></p>
+                                                      <ul>
+                                                        <li>dávky státní sociální podpory,</li>
+                                                        <li>dávky pěstounské péče (nejedná se odměny pěstouna),</li>
+                                                        <li>dávky osobám se zdravotním postižením,</li>
+                                                        <li>dávky pomoci v hmotné nouzi,</li>
+                                                        <li>příspěvek na péči, sociální služby,</li>
+                                                        <li>státní příspěvky na penzijní připojištění se státním příspěvkem,</li>
+                                                        <li>státní příspěvky na doplňkové penzijní spoření,</li>
+                                                        <li>státní příspěvky podle zákona o stavebním spoření,</li>
+                                                        <li>stipendium poskytované studujícím soustavně se připravujícím na budoucí povolání,</li>
+                                                        <li>příjem plynoucí z důvodu péče o blízkou nebo jinou osobu, která má nárok na příspěvek na péči podle zákona o sociálních službách, který je od daně osvobozen.</li>
+                                                      </ul>
+                                                      <p><strong>Příjmy, které se do příjmů manžela či manželky zahrnují (namátkový výčet, často chybně uplatňovaných):</strong></p>
+                                                      <ul>
+                                                        <li>veškeré příjmy "v hrubém" od zaměstnavatele, z podnikání, z nájmu atd.,</li>
+                                                        <li>včetně příjmů od daně osvobozených např. prodej nemovitosti, auta, cenných papírů,</li>
+                                                        <li>všechny druhy důchodů,</li>
+                                                        <li>nemocenská,</li>
+                                                        <li>náhrada mzdy při pracovní neschopnosti,</li>
+                                                        <li>ošetřování člena rodiny,</li>
+                                                        <li>podpora v nezaměstnanosti,</li>
+                                                        <li>peněžitá pomoc v mateřství,</li>
+                                                        <li>odměny pěstouna.</li>
+                                                      </ul>
+                                                    </div>
+
+
+                                                    <% i+=1%><h2 id="<%= i %>"><a class="link">Archivace</a></h2>
+                                                    <div class="content">
+                                                      <p>
+                                                        <strong>Z hlediska účetních předpisů </strong>stanoví zákon č. 563/1991 Sb., o účetnictví,
+                                                        v § 31 lhůty, po které je nutno uschovávat účetní záznamy.
+                                                      </p>
+                                                      <p>
+                                                        <strong>Z hlediska daňových předpisů </strong>je třeba příslušné doklady archivovat
+                                                        po celou dobu, po kterou neskončila lhůta pro vyměření daně.<strong> Základní lhůta</strong>
+                                                        je stanovena na <span>3 roky po uplynutí roku, v němž vznikla daňová povinnost</span>.
+                                                      </p>
+                                                      <p>
+                                                        Tato lhůta se <strong>prodlužuje</strong> v případě přijetí investiční pobídky formou
+                                                        poskytnutí slevy na dani na celou dobu uplatňování této slevy, dále <strong>při uplatňování
+                                                          ztráty minulých let</strong>, včetně roku vzniku ztráty, a při nesplnění podmínek
+                                                          pro uznání nákladů <strong>u finančního leasingu</strong>, kdy začíná lhůta pro
+                                                          doměření daně běžet od konce kalendářního roku, v němž bylo možno poprvé ověřit
+                                                          splnění těchto podmínek. Tato lhůta může skutečně být <span>až 11 let</span>. Ustanovení
+                                                          § 38r ZDP možné lhůty pro vyměření či dodatečné vyměření daně proti § 47 ZSDP prodlužuje.
+                                                          Doplněním odst. 4 do tohoto ustanovení byl pouze potvrzen původní záměr, aby tyto
+                                                          lhůty byly platné pro všechny poplatníky vykazující daňovou ztrátu či pořizující
+                                                          majetek formou finančního leasingu, a nikoliv pouze pro poplatníky čerpající investiční
+                                                          pobídky, jak bylo z původního znění tohoto ustanovení dovozováno. <strong>Pokud však
+                                                            poplatník nepatří mezi výše uvedené poplatníky, tedy pokud nedostal investiční pobídku,
+                                                            nevykázal daňovou ztrátu ani nepořídil majetek formou finančního leasingu, tato
+                                                            prodloužená lhůta se ho netýká</strong>.
+                                                          </p>
+                                                          <p>
+                                                            <a href="http://www.archivovani.cz/skartacni-lhuty">Skartační lhůty</a></p>
+                                                          </div>
+
+                                                          <% i+=1%><h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci bez náhrady mzdy podle nařízení vlády číslo 590/2006 Sb.</a></h2>
+                                                          <div class="content">
+                                                            <span>Vyšetření nebo ošetření</span>
+                                                            <ul>
+                                                              <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu nepřísluší za dobu přesahující dobu, za kterou by vyšetření bylo provedeno v nejbližším zdravotnickém zařízení.</li>
+                                                              <li>které bylo možné provést mimo pracovní dobu.</li>
+                                                            </ul>
+                                                            <span>Přerušení dopravního provozu nebo zpoždění hromadných dopravních prostředků</span>
+                                                            <ul>
+                                                              <li>nemohl-li zaměstnanec dosáhnout včas místa pracoviště jiným přiměřeným způsobem.</li>
+                                                            </ul>
+                                                            <span>Svatba</span>
+                                                            <ul>
+                                                              <li>v případě poskytnutí pracovního volna na 2 dny na vlastní svatbu, za 1 den z těchto 2 dnů náhrada mzdy nepřísluší.</li>
+                                                              <li>1 den dítěti při svatbě rodičů.</li>
+                                                            </ul>
+                                                            <span>Narození dítěte</span>
+                                                            <ul>
+                                                              <li>účast při porodu manželky (družky).</li>
+                                                            </ul>
+                                                            <span>Přestěhování</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu, nejvýše na 2 dny, při přestěhování zaměstnance, který má vlastní bytové zařízení.</li>
+                                                            </ul>
+                                                            <span>Vyhledání nového zaměstnání</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu odpovídající výpovědní době v délce 2 měsíců.</li>
+                                                            </ul>
+                                                            <span>Doprovod</span>
+                                                            <ul>
+                                                              <li>doprovod rodinných příslušníků, mimo manžela, druha, dítěte, rodiče a prarodiče zaměstnance nebo jeho manžela, do zdravotnického zařízení k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení.</li>
+                                                              <li>doprovod dítěte do školského poradenského zařízení je zjištění speciálních vzdělávacích potřeb dítěte.</li>
+                                                            </ul>
+                                                          </div>
+
+                                                          <% i+=1%><h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci s náhradou mzdy</a></h2>
+                                                          <div class="content">
+                                                            <span>Vyšetření nebo ošetření</span><br>
+                                                            na nezbytně nutnou dobu, bylo-li vyšetření nebo ošetření provedeno ve zdravotnickém zařízení, které je ve smluvním vztahu ke zdravotní pojišťovně, kterou si zaměstnanec zvolil, a které je <strong>nejblíže </strong>bydlišti nebo pracovišti zaměstnance a je schopné potřebnou zdravotní péči poskytnout, pokud vyšetření nebo ošetření nebylo možné provést <strong>mimo pracovní dobu</strong>.
+                                                            <ul>
+                                                              <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu však přísluší nejvýše za dobu podle předchozího odstavce.</li>
+                                                            </ul>
+                                                            <span>Pracovnělékařská prohlídka, vyšetření nebo očkování související s výkonem práce</span>
+
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu v rozsahu stanoveném zvláštními právními předpisy nebo rozhodnutím příslušného orgánu ochrany veřejného zdraví.</li>
+                                                            </ul>
+                                                            <span>Znemožnění cesty do zaměstnání</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu, nejvýše na 1 den, z povětrnostních důvodů nehromadným dopravním prostředkem, který používá těžce zdravotně postižený zaměstnanec.</li>
+                                                            </ul>
+
+                                                            <span>Svatba</span>
+                                                            <ul>
+                                                              <li>pracovní volno se poskytne na 2 dny na vlastní svatbu, z toho 1 den k účasti na svatebním obřadu; náhrada mzdy nebo platu přísluší však pouze za 1 den z těchto dnů.</li>
+                                                              <li>rodiči na 1 den k účasti na svatbě dítěte</li>
+                                                            </ul>
+
+                                                            <span>Narození dítěte</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu <strong>k převozu manželky</strong> (družky) do zdravotnického zařízení a zpět.</li>
+                                                            </ul>
+
+                                                            <span>Úmrtí</span>
+                                                            <ul>
+                                                              <li><strong>2 dny při úmrtí</strong> manžela, druha nebo dítěte a na<strong> další den k účasti na pohřbu</strong> těchto osob,</li>
+                                                              <li><strong>1 den k účasti na pohřbu</strong> rodiče a sourozence zaměstnance, rodiče a sourozence jeho manžela, jakož i manžela dítěte nebo manžela sourozence zaměstnance a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob,</li>
+                                                              <li>na nezbytně nutnou dobu, nejvýše na 1 den, k účasti na pohřbu prarodiče nebo vnuka zaměstnance nebo prarodiče jeho manžela nebo jiné osoby, která sice nepatří k uvedeným fyzickým osobám, ale žila se zaměstnancem v době úmrtí v domácnosti, a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob.</li>
+                                                            </ul>
+
+                                                            <span>Doprovod</span>
+                                                            <ul>
+                                                              <li>manžela, druha nebo dítěte, jakož i rodiče a prarodiče zaměstnance <strong>do zdravotnického zařízení</strong> k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 1 den, byl-li doprovod nezbytný a uvedené úkony nebylo možno provést mimo pracovní dobu,</li>
+                                                              <li>zdravotně postiženého dítěte do zařízení sociálních služeb nebo do školy nebo školského zařízení samostatně zřízených pro žáky se zdravotním postižením s internátním provozem a zpět se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 6 pracovních dnů v kalendářním roce.</li>
+                                                            </ul>
+
+                                                            <span>Pohřeb spoluzaměstnance</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu zaměstnancům, kteří se zúčastní pohřbu spoluzaměstnance; tyto zaměstnance určí zaměstnavatel nebo zaměstnavatel v dohodě s odborovou organizací.</li>
+                                                            </ul>
+
+                                                            <span>Přestěhování</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu, nejvýše na 2 dny, jde-li o přestěhování v zájmu zaměstnavatele.</li>
+                                                            </ul>
+
+                                                            <span>Vyhledání nového zaměstnání</span>
+                                                            <ul>
+                                                              <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu před skončením pracovního poměru výpovědí danou zaměstnavatelem z důvodů uvedených v § 52 písm. a) až e) zákoníku práce, nebo dohodou z týchž důvodů. Pracovní volno je možné se souhlasem zaměstnavatele slučovat.</li>
+                                                            </ul>
+
+                                                          </div>
+                                                        </article>
+                                                      </section>
