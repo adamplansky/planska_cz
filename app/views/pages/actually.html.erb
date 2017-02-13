@@ -4,8 +4,120 @@
   <h1>Aktuálně</h1>
 
   <article>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">EET – 4 fáze</a></h2>
+    <div class = "content">
+      <%= link_to "http://eet.money.cz/koho-se-tyka-elektronicka-evidence-trzeb", "http://eet.money.cz/koho-se-tyka-elektronicka-evidence-trzeb" %>
+    </div>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">2. etapa EET od 1.3.2017 </a></h2>
+    <div class = "content">
+      <p>Jedná se tedy o tyto činnosti:</p>
+      <p>
+        <ul>
+          <li>45.1 Obchod s motorovými vozidly, kromě motocyklů</li>
+          <li>45.3 Obchod s díly a příslušenstvím pro motorová vozidla, kromě motocyklů</li>
+          <li>45.4 Obchod s motocykly, s díly a příslušenstvím pro motocykly (opravy a údržba motocyklů do 2. etapy EET nepatří)</li>
+          <li>46 Velkoobchod, kromě motorových vozidel</li>
+          <li>47 Malooobchod, kromě motorových vozidel</li>
+        </ul>
+      </p>
+      <p><u>Příklad</u></p>
+      <p>Provozovatel autoservisu poskytuje z pohledu klasifikace NACE tyto činnosti:</p>
+      <p>
+        <ul>
+          <li>servis automobilů NACE 45.2</li>
+          <li>obchod s díly a příslušenstvím pro automobily NACE 45.3.</li>
+        </ul>
+      </p>
+      <p>Tržby ze servisu automobilů podléhají evidenci tržeb až od 1.3.2018, <strong>tržby z prodeje dílů a příslušenství podléhají evidenci tržeb již od 1.3.2017</strong> – pokud by však tyto tržby byly tržbami minoritními, nebude finanční správa plnění této povinnosti až do 1.3.2018 vymáhat. </p>
+      <p>Do 2. etapy evidence tržeb od 1.3.2017 spadá veškerý velko a maloobchod, tj. <strong>nákup a prodej zboží bez dalšího zpracování včetně komisního prodeje v bazarech</strong>. Třídění, klasifikování a sestavování (montáž) zboží, míchání (mísení) zboží (např. písku), plnění do lahví, balení, vybalování a přebalování pro rozdělování na menší množství, označování etiketami, skladování (i mražením nebo chlazením), dodávání a instalace zboží přitom není považováno za další zpracování!!!</p>
+      <p>Naproti tomu <strong>prodej zboží vlastní výroby</strong> bude spadat až do další etapy evidence tržeb <strong>od 1.3.2018</strong>.</p>
+      <p><u>Příklad</u></p>
+      <p>Pekárna dodává pečivo svým zákazníkům (rozváží zboží vlastními automobily a zákazníci za zboží platí hotově řidičům) a dále prodává pečivo ve vlastních prodejnách a v těchto prodejnách prodává i zboží jiných výrobců. Jak se této pekárny týká evidence tržeb?</p>
+      <p>Platby vybírané řidiči nejsou platbami z velko/malo obchodu a budou podléhat evidenci tržeb až od 1.3.2018. Platby za cizí výrobky přijímané v jednotlivých prodejnách podléhají evidenci tržeb již od 1.3.2017, ale pokud splní podmínku minoritních plateb (každá provozovna, v daném případě prodejna resp. automobil, se posuzuje samostatně), nemusí tyto platby evidovat až do 1.3.2018. Platby za vlastní pečivo pekárny v jejích prodejnách podléhají evidenci tržeb od 1.3.2018. Pokud by příslušná prodejna evidovala platby za zboží jiných výrobců již od 1.3.2017, může pochopitelně s nimi dobrovolně evidovat i platby za vlastní pečivo.</p>
+      <h3>Platby přes platební brány </h3>
+      <p>Zákon o evidenci tržeb za evidovanou platbu považuje také platbu provedenou:</p>
+      <p>bezhotovostním převodem peněžních prostředků, k němuž dává příkaz plátce prostřednictvím příjemce, kterým je poplatník, který má tržbu evidovat.</p>
+      <p><u>Příklad</u></p>
+      <p>
+        <ul>
+          <li>e-shop 1.3.2017 v 00 hod 10 min potvrdí objednávku zákazníka  (podle informace GFŘ z 11/2016 vystavena nejpozději 1.3.2017 v 00 hod 11 min, např. při potvrzení objednávky v 00 hod 10 min a následně může být např. přiložena k odesílanému zboží)</li>
+          <li>zákazník je v nákupním koši e-shopu přesměrován na platební bránu a zákazník zaplatí 1.3.2017 v 00 hod 11 min</li>
+          <li>e-shop je o provedení platby zákazníkem informován 1.3.2017 v 05 hod 10 min</li>
+          <li>e-shop 1.3.2017 v 10 hod 20 min expeduje objednané zboží</li>
+          <li>2.3.2017 v 15 hod zákazník převezme zboží</li>
+          <li>5.3.2017 v 08 hod 05 min je kupní cena připsána na účet e-shopu</li>
+        </ul>
+      </p>
+    </div>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">Minimální zálohy OSVČ 2017</a></h2>
+    <div class = "content">
+      <h3>Základní náhrady za 1 km jízdy 2016/2017</h3>
+      <p><i>(§ 157/4 ZP)</i></p>
+      <p>
+        <ul>
+          <li>Za 1 km jízdy 3,80 / 3,90</li>
+          <li>Jednostopých vozidel a tříkolek 1,10</li>
+          <li>Při použití přívěsu k silničnímu motorovému vozidlu 4,37 / 4,49</li>
+          <li>Základní náhrada u nákladních automobilů, autobusů nebo traktorů  výši dvojnásobku sazby 7,60 / 7,80></li>
+        </ul>
+      </p>
 
+      <h3>Průměrné ceny PHM 2016/2017</h3>
+      <p><i>(§ 158/3 ZP)</i></p>
+      <p>
+        <ul>
+          <li>Benzin 95 oktanů 29,70 / 29,50</li>
+          <li>Benzin 98 oktanů 33,00 /32,50</li>
+          <li>Nafta 29,50 / 28,60</li>
+        </ul>
+      </p>
 
+      <h3>Tuzemské stravné 2016/2017</h3>
+      <p><strong>Státní a příspěvková sféra</strong></p>
+      <p><i>(§ 176/1 ZP)</i></p>
+      <p>
+        <ul>
+          <li>5 – 12 hod. 70-83 / 72-86</li>
+          <li>12-18 hod. 106-127 / 109-132</li>
+          <li>nad 18 hod. 166-198 / 171-205</li>
+        </ul>
+      </p>
+      <p><strong>Podnikatelská sféra</strong></p>
+      <p><i>(§ 163/1 ZP)</i></p>
+      <p>
+        <ul>
+          <li>5 – 12 hod. 70 / 72</li>
+          <li>12-18 hod. 106 / 109</li>
+          <li>nad 18 hod. 166 / 171</li>
+        </ul>
+      </p>
+      <p>Bylo-li zaměstnanci během pracovní cesty poskytnuto bezplatné jídlo, přísluší mu stravné snížené za každé bezplatné jídlo o hodnotu:</p>
+      <p>
+        <ul>
+          <li>70 % stravného, trvá-li pracovní cesta 5 až 12 hodin,</li>
+          <li>35 % stravného, trvá-li pracovní cesta 12 až 18</li>
+          <li>25 % stravného, trvá-li pracovní cesta déle než 18</li>
+        </ul>
+      </p>
+      <p>Stravné zaměstnanci nepřísluší, pokud mu během pracovní cesty, která trvá:</p>
+      <p>
+        <ul>
+          <li>5 až 12 hodin, byla poskytnuta 2 bezplatná jídla,12 až 18 hodin, byla poskytnuta jídla.</li>
+          <li>12 až 18 hodin, byla poskytnuta 3 bezplatná</li>
+        </ul>
+      </p>
+      <p>Sazby základních náhrad a průměrné ceny PHM platí pro OSVČ a zaměstnance, který použil pro pracovní cestu jiné vozidlo než vozidlo zaměstnavatele a cenu PHM nedoložil nákupním dokladem.</p>
+    </div>
+    <% i+=1%><h2 id="<%= i %>"><a class="link">Minimální zálohy OSVČ 2017</a></h2>
+    <div class = "content">
+      <p>
+        <ul>
+          <li>Zdravotní 1906,00</li>
+          <li>Sociální hlavní činnost 2061,-, vedlejší činnost 825,-</li>
+          <li>Nemocenské 115,-</li>
+        </ul>
+      </p>
+    </div>
 
     <% i+=1%><h2 id="<%= i %>"><a class="link">Zvýšení minimální mzdy od 1.1.2017</a></h2>
     <div class = "content">
