@@ -6,10 +6,10 @@ class PagesController < ApplicationController
     @html_act = Nokogiri::HTML(act, nil, 'utf-8')
     act.close
 
-    x2014 = File.join(Rails.root, 'app', 'views', 'pages', '2014.html.erb')
-    x2014 = File.open(x2014)
-    @html_2014 = Nokogiri::HTML(x2014, nil, 'utf-8')
-    x2014.close
+    x2016 = File.join(Rails.root, 'app', 'views', 'pages', '2016.html.erb')
+    x2016 = File.open(x2016)
+    @html_2016 = Nokogiri::HTML(x2016, nil, 'utf-8')
+    x2016.close
 
     archiv = File.join(Rails.root, 'app', 'views', 'pages', 'archiv.html.erb')
     archiv = File.open(archiv)
