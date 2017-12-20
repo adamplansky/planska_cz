@@ -14,7 +14,7 @@ gem 'bootstrap-sass'
 gem 'high_voltage'
 gem "activerecord-tableless", "~> 1.0"
 gem 'sitemap_generator'
-gem 'nokogiri'
+gem "nokogiri", "~> 1.8.1"
 gem 'rack-timeout'
 
 group :development do
