@@ -16,6 +16,8 @@ gem "activerecord-tableless", "~> 1.0"
 gem 'sitemap_generator'
 gem "nokogiri", "~> 1.8.1"
 gem 'rack-timeout'
+gem 'puma'
+gem 'pg', '~> 0.18.4'
 
 group :development do
   gem 'better_errors'
@@ -28,8 +30,5 @@ end
 
 
 group :production do
-  gem 'pg'
-  gem 'unicorn'
   gem 'rails_12factor'
-
 end
