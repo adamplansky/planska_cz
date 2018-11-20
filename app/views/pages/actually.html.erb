@@ -2,28 +2,32 @@
 <section class="actually top_nav_content">
   <h1>Aktuálně</h1>
   <article>
-  <% i+=1%>
+    <% i+=1%>
+    
+    <h2 id="<%= i %>"><a class="link">Zvýšení minimální mzdy 2019</a></h2>
+    <div class = "content">
+    <p>od 01/2019 se zvýší minimální mzda z 12.200 na <strong>13.350 Kč</strong>, tj. o 1 150 Kč.</p>
+    </div>
     <h2 id="<%= i %>"><a class="link">Splatnost důchodového pojištění a zvýšení nemocenského pojištění od 2019</a></h2>
     <div class = "content">
-    <ul>
-      <li><strong>splatnost důchodového pojištění: vždy v kalendářním měsíci, ke kterému se pojistné vztahuje</strong></li>
-      <li>platit bude možné až do posledního dne kalendářního měsíce</li>
-      <li>zdravotní pojištění se i nadále bude platit od 1. do 8. dne následujícího měsíce</li>
-      <li>v souvislosti s touto změnou by tedy bylo nutné platit na přelomu roku pojistné dvakrát: za prosinec 2018 zpětně a za leden 2019 v měsíci lednu. Zákonodárci situaci vyřešili přechodným ustanovením, podle kterého se záloha na pojistné zaplacená v lednu 2019 bude považovat za zálohu za tento měsíc. Záloha za prosinec tak nemusí být uhrazena vůbec. Může však být uhrazena dobrovolně. Osoba samostatně výdělečně činná se tak vyhne většímu doplatku pojistného po podání přehledu. Dobrovolnou zálohu na důchodové pojištění za měsíc prosinec lze zaplatit od 21. do 31. prosince 2018. U nemocenského pojištění však žádná úleva není a doplatek za prosinec se musí zaplatit do 21. ledna 2019 (20. ledna je neděle).</li>
-    </ul>
-    <p>Důvodem změn byly problémy u nemocenského pojištění. Podle zákona o nemocenském pojištění, ve znění pozdějších předpisů, totiž zaniká OSVČ účast na nemocenském pojištění, pokud nebylo pojistné zaplaceno ve stanovené lhůtě, posledním dnem měsíce, za který bylo pojistné zaplaceno. <strong>Nově bude platit, že nemocenské pojištění ihned nezanikne a že vznikne dluh na pojistném</strong>. Ten bude moct být doplacen do konce následujícího měsíce. V rámci „zjednodušení“ se zákonodárci rozhodli splatnost posunout i u důchodového pojištění.</p>
-    <p><strong>Pokuty zatím nehrozí - pokud budou zálohy platit jako doposud</strong>. Novela totiž obsahuje paragraf, dle kterého se neplatí penále, pokud byla záloha zaplacena do konce měsíce následujícího po měsíci, za který se záloha platí. OSVČ tak mohou beztrestně platit zálohy jako doposud zpětně. </p>
-    <h3>Zvýšení nemocenského pojištění </h3>
-    <p>Od 1.1.2019 ze 115 Kč <strong>na 138 Kč</strong>,</p>
-    <ul>
-      <li><strong>NP za 12/2018</strong> se pojistné na NP platí <strong>od 1. ledna do pondělí 21. ledna 2019</strong></li>
-      <li><strong>NP za 01/2019</strong> se platí také v lednu <strong>od 1. do 31. ledna</strong>. V lednu 2019 by mělo být pojistné zaplaceno dvěma platbami (minimální výše platby za prosinec 2018 musí činit aspoň 115 Kč a druhé platby za leden 2019 aspoň 138 Kč) nebo jednou platbou ve výši aspoň 253 Kč (115 Kč + 138 Kč), zaplacenou nejpozději do 21. ledna 2019. </li>
-    </ul>
-    <div>
-      <%= link_to 'Změny v placení SP OSVČ od 1.1.2019', "/files/zmeny_v_placeni_osvc_1_1_2019.pdf"%>
+      <ul>
+        <li><strong>splatnost důchodového pojištění: vždy v kalendářním měsíci, ke kterému se pojistné vztahuje</strong></li>
+        <li>platit bude možné až do posledního dne kalendářního měsíce</li>
+        <li>zdravotní pojištění se i nadále bude platit od 1. do 8. dne následujícího měsíce</li>
+        <li>v souvislosti s touto změnou by tedy bylo nutné platit na přelomu roku pojistné dvakrát: za prosinec 2018 zpětně a za leden 2019 v měsíci lednu. Zákonodárci situaci vyřešili přechodným ustanovením, podle kterého se záloha na pojistné zaplacená v lednu 2019 bude považovat za zálohu za tento měsíc. Záloha za prosinec tak nemusí být uhrazena vůbec. Může však být uhrazena dobrovolně. Osoba samostatně výdělečně činná se tak vyhne většímu doplatku pojistného po podání přehledu. Dobrovolnou zálohu na důchodové pojištění za měsíc prosinec lze zaplatit od 21. do 31. prosince 2018. U nemocenského pojištění však žádná úleva není a doplatek za prosinec se musí zaplatit do 21. ledna 2019 (20. ledna je neděle).</li>
+      </ul>
+      <p>Důvodem změn byly problémy u nemocenského pojištění. Podle zákona o nemocenském pojištění, ve znění pozdějších předpisů, totiž zaniká OSVČ účast na nemocenském pojištění, pokud nebylo pojistné zaplaceno ve stanovené lhůtě, posledním dnem měsíce, za který bylo pojistné zaplaceno. <strong>Nově bude platit, že nemocenské pojištění ihned nezanikne a že vznikne dluh na pojistném</strong>. Ten bude moct být doplacen do konce následujícího měsíce. V rámci „zjednodušení“ se zákonodárci rozhodli splatnost posunout i u důchodového pojištění.</p>
+      <p><strong>Pokuty zatím nehrozí - pokud budou zálohy platit jako doposud</strong>. Novela totiž obsahuje paragraf, dle kterého se neplatí penále, pokud byla záloha zaplacena do konce měsíce následujícího po měsíci, za který se záloha platí. OSVČ tak mohou beztrestně platit zálohy jako doposud zpětně. </p>
+      <h3>Zvýšení nemocenského pojištění </h3>
+      <p>Od 1.1.2019 ze 115 Kč <strong>na 138 Kč</strong>,</p>
+      <ul>
+        <li><strong>NP za 12/2018</strong> se pojistné na NP platí <strong>od 1. ledna do pondělí 21. ledna 2019</strong></li>
+        <li><strong>NP za 01/2019</strong> se platí také v lednu <strong>od 1. do 31. ledna</strong>. V lednu 2019 by mělo být pojistné zaplaceno dvěma platbami (minimální výše platby za prosinec 2018 musí činit aspoň 115 Kč a druhé platby za leden 2019 aspoň 138 Kč) nebo jednou platbou ve výši aspoň 253 Kč (115 Kč + 138 Kč), zaplacenou nejpozději do 21. ledna 2019. </li>
+      </ul>
+      <div>
+        <%= link_to 'Změny v placení SP OSVČ od 1.1.2019', "/files/zmeny_v_placeni_osvc_1_1_2019.pdf"%>
+      </div>
     </div>
-    </div>
-
     <% i+=1%>
     <h2 id="<%= i %>"><a class="link">Zrušení karenční doby</a></h2>
     <div class = "content">
@@ -320,175 +324,173 @@
     <div class="content">
       <p>Při dovozu zboží ze třetích zemí jsou důležité hranice pro osvobození cla a DPH. Zboží v úhrnné hodnotě nepřesahující 22 EUR je osvobozeno od cla i DPH, zboží nad 22 EUR do 150 EUR je osvobozeno od cla, ale bude vyměřena DPH a zboží nad 150 EUR je bez osvobození, tzn. bude vyměřeno clo i DPH.</p>
     </div>
-
-                                           <% i+=1%>
-<h2 id="<%= i %>"><a class="link">Sleva na manžela/manželku</a></h2>
-<div class="content">
-  <p>pokud nemá vlastní příjem přesahující za zdaňovací období 68 000,- (§ 35ba/1/a ZDP)</p>
-  <p><strong>Příjmy, které se do příjmu manžela či manželky nezahrnují (úplný výčet):</strong></p>
-  <ul>
-    <li>dávky státní sociální podpory,</li>
-    <li>dávky pěstounské péče (nejedná se odměny pěstouna),</li>
-    <li>dávky osobám se zdravotním postižením,</li>
-    <li>dávky pomoci v hmotné nouzi,</li>
-    <li>příspěvek na péči, sociální služby,</li>
-    <li>státní příspěvky na penzijní připojištění se státním příspěvkem,</li>
-    <li>státní příspěvky na doplňkové penzijní spoření,</li>
-    <li>státní příspěvky podle zákona o stavebním spoření,</li>
-    <li>stipendium poskytované studujícím soustavně se připravujícím na budoucí povolání,</li>
-    <li>příjem plynoucí z důvodu péče o blízkou nebo jinou osobu, která má nárok na příspěvek na péči podle zákona o sociálních službách, který je od daně osvobozen.</li>
-  </ul>
-  <p><strong>Příjmy, které se do příjmů manžela či manželky zahrnují (namátkový výčet, často chybně uplatňovaných):</strong></p>
-  <ul>
-    <li>veškeré příjmy "v hrubém" od zaměstnavatele, z podnikání, z nájmu atd.,</li>
-    <li>včetně příjmů od daně osvobozených např. prodej nemovitosti, auta, cenných papírů,</li>
-    <li>všechny druhy důchodů,</li>
-    <li>nemocenská,</li>
-    <li>náhrada mzdy při pracovní neschopnosti,</li>
-    <li>ošetřování člena rodiny,</li>
-    <li>podpora v nezaměstnanosti,</li>
-    <li>peněžitá pomoc v mateřství,</li>
-    <li>odměny pěstouna.</li>
-  </ul>
-</div>
-<% i+=1%>
-<h2 id="<%= i %>"><a class="link">Archivace</a></h2>
-<div class="content">
-  <p>
-    <strong>Z hlediska účetních předpisů </strong>stanoví zákon č. 563/1991 Sb., o účetnictví,
-    v § 31 lhůty, po které je nutno uschovávat účetní záznamy.
-  </p>
-  <p>
-    <strong>Z hlediska daňových předpisů </strong>je třeba příslušné doklady archivovat
-    po celou dobu, po kterou neskončila lhůta pro vyměření daně.<strong> Základní lhůta</strong>
-    je stanovena na <span>3 roky po uplynutí roku, v němž vznikla daňová povinnost</span>.
-  </p>
-  <p>
-    Tato lhůta se <strong>prodlužuje</strong> v případě přijetí investiční pobídky formou
-    poskytnutí slevy na dani na celou dobu uplatňování této slevy, dále <strong>při uplatňování
-      ztráty minulých let</strong>, včetně roku vzniku ztráty, a při nesplnění podmínek
-    pro uznání nákladů <strong>u finančního leasingu</strong>, kdy začíná lhůta pro
-    doměření daně běžet od konce kalendářního roku, v němž bylo možno poprvé ověřit
-    splnění těchto podmínek. Tato lhůta může skutečně být <span>až 11 let</span>. Ustanovení
-    § 38r ZDP možné lhůty pro vyměření či dodatečné vyměření daně proti § 47 ZSDP prodlužuje.
-    Doplněním odst. 4 do tohoto ustanovení byl pouze potvrzen původní záměr, aby tyto
-    lhůty byly platné pro všechny poplatníky vykazující daňovou ztrátu či pořizující
-    majetek formou finančního leasingu, a nikoliv pouze pro poplatníky čerpající investiční
-    pobídky, jak bylo z původního znění tohoto ustanovení dovozováno. <strong>Pokud však
-      poplatník nepatří mezi výše uvedené poplatníky, tedy pokud nedostal investiční pobídku,
-      nevykázal daňovou ztrátu ani nepořídil majetek formou finančního leasingu, tato
-      prodloužená lhůta se ho netýká</strong>.
-  </p>
-  <p><a href="http://www.archivovani.cz/skartacni-lhuty">Skartační lhůty</a></p>
-  <br />
-  <p><strong>V souladu se <%= link_to "zákonem o účetnictví", "https://www.podnikatel.cz/zakony/zakon-c-563-1991-sb-o-ucetnictvi/" %> je možné archivovat: </p>
-  </strong>
-  <ul>
-    <li><strong>v listinné podobě</strong> – papírový účetní záznam pořízený rukopisem, psacím strojem, tiskařskými nebo reprografickými technikami anebo počítačová tisková sestava.</li>
-    <li><strong>v technické podobě</strong> – účetní záznam provedený elektronickým, optickým nebo jiným způsobem, který umožňuje jeho převedení do čitelné formy, např. archivace na CD.</li>
-  </ul>
-  <p><strong>Po skončení účetního období se archivuje:</p>
-  </strong>
-  <ul>
-    <li>účetní závěrka, výroční zpráva – <strong>10 let</strong></li>
-    <li>účetní doklady, účetní knihy, odpisové plány, inventurní soupisy, účtový rozvrh, přehledy – <strong>5 let</strong></li>
-    <li>účetní záznamy, kterými účetní jednotky dokládají vedení účetnictví – <strong>5 let</strong></li>
-  </ul>
-  <p>Dokumenty z personalistiky se archivují od roku, který následuje po roce, kterého se dokumenty týkají:</p>
-  <ul>
-    <li>stejnopisy evidenčních listů – 3 roky</li>
-    <li>mzdové listy, účetní záznamy o údajích potřebných pro účely důchodového pojištění – 30 let (u starobního důchodu pouze 10 let)</li>
-    <li>u obchodní společnosti (a obdobně i družstva) seznam společníků, členů statutárního orgánu, dozorčí rady a přehled, kdy tato společnost neodvedla pojistné na sociální zabezpečení a příspěvek na státní politiku zaměstnanosti – 6 let (3 roky po zaplacení dlužného pojistného)</li>
-  </ul>
-  <p>Podnikatelé – <strong>plátci daně z přidané hodnoty</strong> archivují:</p>
-  <ul>
-    <li>daňové doklady – <strong>10</strong> let od konce zdaňovacího období.</li>
-  </ul>
-</div>
-<% i+=1%>
-<h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci bez náhrady mzdy podle nařízení vlády číslo 590/2006 Sb.</a></h2>
-<div class="content">
-  <span>Vyšetření nebo ošetření</span>
-  <ul>
-    <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu nepřísluší za dobu přesahující dobu, za kterou by vyšetření bylo provedeno v nejbližším zdravotnickém zařízení.</li>
-    <li>které bylo možné provést mimo pracovní dobu.</li>
-  </ul>
-  <span>Přerušení dopravního provozu nebo zpoždění hromadných dopravních prostředků</span>
-  <ul>
-    <li>nemohl-li zaměstnanec dosáhnout včas místa pracoviště jiným přiměřeným způsobem.</li>
-  </ul>
-  <span>Svatba</span>
-  <ul>
-    <li>v případě poskytnutí pracovního volna na 2 dny na vlastní svatbu, za 1 den z těchto 2 dnů náhrada mzdy nepřísluší.</li>
-    <li>1 den dítěti při svatbě rodičů.</li>
-  </ul>
-  <span>Narození dítěte</span>
-  <ul>
-    <li>účast při porodu manželky (družky).</li>
-  </ul>
-  <span>Přestěhování</span>
-  <ul>
-    <li>na nezbytně nutnou dobu, nejvýše na 2 dny, při přestěhování zaměstnance, který má vlastní bytové zařízení.</li>
-  </ul>
-  <span>Vyhledání nového zaměstnání</span>
-  <ul>
-    <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu odpovídající výpovědní době v délce 2 měsíců.</li>
-  </ul>
-  <span>Doprovod</span>
-  <ul>
-    <li>doprovod rodinných příslušníků, mimo manžela, druha, dítěte, rodiče a prarodiče zaměstnance nebo jeho manžela, do zdravotnického zařízení k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení.</li>
-    <li>doprovod dítěte do školského poradenského zařízení je zjištění speciálních vzdělávacích potřeb dítěte.</li>
-  </ul>
-</div>
-<% i+=1%>
-<h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci s náhradou mzdy</a></h2>
-<div class="content">
-  <span>Vyšetření nebo ošetření</span><br>
-  na nezbytně nutnou dobu, bylo-li vyšetření nebo ošetření provedeno ve zdravotnickém zařízení, které je ve smluvním vztahu ke zdravotní pojišťovně, kterou si zaměstnanec zvolil, a které je <strong>nejblíže </strong>bydlišti nebo pracovišti zaměstnance a je schopné potřebnou zdravotní péči poskytnout, pokud vyšetření nebo ošetření nebylo možné provést <strong>mimo pracovní dobu</strong>.
-  <ul>
-    <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu však přísluší nejvýše za dobu podle předchozího odstavce.</li>
-  </ul>
-  <span>Pracovnělékařská prohlídka, vyšetření nebo očkování související s výkonem práce</span>
-  <ul>
-    <li>na nezbytně nutnou dobu v rozsahu stanoveném zvláštními právními předpisy nebo rozhodnutím příslušného orgánu ochrany veřejného zdraví.</li>
-  </ul>
-  <span>Znemožnění cesty do zaměstnání</span>
-  <ul>
-    <li>na nezbytně nutnou dobu, nejvýše na 1 den, z povětrnostních důvodů nehromadným dopravním prostředkem, který používá těžce zdravotně postižený zaměstnanec.</li>
-  </ul>
-  <span>Svatba</span>
-  <ul>
-    <li>pracovní volno se poskytne na 2 dny na vlastní svatbu, z toho 1 den k účasti na svatebním obřadu; náhrada mzdy nebo platu přísluší však pouze za 1 den z těchto dnů.</li>
-    <li>rodiči na 1 den k účasti na svatbě dítěte</li>
-  </ul>
-  <span>Narození dítěte</span>
-  <ul>
-    <li>na nezbytně nutnou dobu <strong>k převozu manželky</strong> (družky) do zdravotnického zařízení a zpět.</li>
-  </ul>
-  <span>Úmrtí</span>
-  <ul>
-    <li><strong>2 dny při úmrtí</strong> manžela, druha nebo dítěte a na<strong> další den k účasti na pohřbu</strong> těchto osob,</li>
-    <li><strong>1 den k účasti na pohřbu</strong> rodiče a sourozence zaměstnance, rodiče a sourozence jeho manžela, jakož i manžela dítěte nebo manžela sourozence zaměstnance a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob,</li>
-    <li>na nezbytně nutnou dobu, nejvýše na 1 den, k účasti na pohřbu prarodiče nebo vnuka zaměstnance nebo prarodiče jeho manžela nebo jiné osoby, která sice nepatří k uvedeným fyzickým osobám, ale žila se zaměstnancem v době úmrtí v domácnosti, a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob.</li>
-  </ul>
-  <span>Doprovod</span>
-  <ul>
-    <li>manžela, druha nebo dítěte, jakož i rodiče a prarodiče zaměstnance <strong>do zdravotnického zařízení</strong> k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 1 den, byl-li doprovod nezbytný a uvedené úkony nebylo možno provést mimo pracovní dobu,</li>
-    <li>zdravotně postiženého dítěte do zařízení sociálních služeb nebo do školy nebo školského zařízení samostatně zřízených pro žáky se zdravotním postižením s internátním provozem a zpět se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 6 pracovních dnů v kalendářním roce.</li>
-  </ul>
-  <span>Pohřeb spoluzaměstnance</span>
-  <ul>
-    <li>na nezbytně nutnou dobu zaměstnancům, kteří se zúčastní pohřbu spoluzaměstnance; tyto zaměstnance určí zaměstnavatel nebo zaměstnavatel v dohodě s odborovou organizací.</li>
-  </ul>
-  <span>Přestěhování</span>
-  <ul>
-    <li>na nezbytně nutnou dobu, nejvýše na 2 dny, jde-li o přestěhování v zájmu zaměstnavatele.</li>
-  </ul>
-  <span>Vyhledání nového zaměstnání</span>
-  <ul>
-    <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu před skončením pracovního poměru výpovědí danou zaměstnavatelem z důvodů uvedených v § 52 písm. a) až e) zákoníku práce, nebo dohodou z týchž důvodů. Pracovní volno je možné se souhlasem zaměstnavatele slučovat.</li>
-  </ul>
-</div>
-
+    <% i+=1%>
+    <h2 id="<%= i %>"><a class="link">Sleva na manžela/manželku</a></h2>
+    <div class="content">
+      <p>pokud nemá vlastní příjem přesahující za zdaňovací období 68 000,- (§ 35ba/1/a ZDP)</p>
+      <p><strong>Příjmy, které se do příjmu manžela či manželky nezahrnují (úplný výčet):</strong></p>
+      <ul>
+        <li>dávky státní sociální podpory,</li>
+        <li>dávky pěstounské péče (nejedná se odměny pěstouna),</li>
+        <li>dávky osobám se zdravotním postižením,</li>
+        <li>dávky pomoci v hmotné nouzi,</li>
+        <li>příspěvek na péči, sociální služby,</li>
+        <li>státní příspěvky na penzijní připojištění se státním příspěvkem,</li>
+        <li>státní příspěvky na doplňkové penzijní spoření,</li>
+        <li>státní příspěvky podle zákona o stavebním spoření,</li>
+        <li>stipendium poskytované studujícím soustavně se připravujícím na budoucí povolání,</li>
+        <li>příjem plynoucí z důvodu péče o blízkou nebo jinou osobu, která má nárok na příspěvek na péči podle zákona o sociálních službách, který je od daně osvobozen.</li>
+      </ul>
+      <p><strong>Příjmy, které se do příjmů manžela či manželky zahrnují (namátkový výčet, často chybně uplatňovaných):</strong></p>
+      <ul>
+        <li>veškeré příjmy "v hrubém" od zaměstnavatele, z podnikání, z nájmu atd.,</li>
+        <li>včetně příjmů od daně osvobozených např. prodej nemovitosti, auta, cenných papírů,</li>
+        <li>všechny druhy důchodů,</li>
+        <li>nemocenská,</li>
+        <li>náhrada mzdy při pracovní neschopnosti,</li>
+        <li>ošetřování člena rodiny,</li>
+        <li>podpora v nezaměstnanosti,</li>
+        <li>peněžitá pomoc v mateřství,</li>
+        <li>odměny pěstouna.</li>
+      </ul>
+    </div>
+    <% i+=1%>
+    <h2 id="<%= i %>"><a class="link">Archivace</a></h2>
+    <div class="content">
+      <p>
+        <strong>Z hlediska účetních předpisů </strong>stanoví zákon č. 563/1991 Sb., o účetnictví,
+        v § 31 lhůty, po které je nutno uschovávat účetní záznamy.
+      </p>
+      <p>
+        <strong>Z hlediska daňových předpisů </strong>je třeba příslušné doklady archivovat
+        po celou dobu, po kterou neskončila lhůta pro vyměření daně.<strong> Základní lhůta</strong>
+        je stanovena na <span>3 roky po uplynutí roku, v němž vznikla daňová povinnost</span>.
+      </p>
+      <p>
+        Tato lhůta se <strong>prodlužuje</strong> v případě přijetí investiční pobídky formou
+        poskytnutí slevy na dani na celou dobu uplatňování této slevy, dále <strong>při uplatňování
+          ztráty minulých let</strong>, včetně roku vzniku ztráty, a při nesplnění podmínek
+        pro uznání nákladů <strong>u finančního leasingu</strong>, kdy začíná lhůta pro
+        doměření daně běžet od konce kalendářního roku, v němž bylo možno poprvé ověřit
+        splnění těchto podmínek. Tato lhůta může skutečně být <span>až 11 let</span>. Ustanovení
+        § 38r ZDP možné lhůty pro vyměření či dodatečné vyměření daně proti § 47 ZSDP prodlužuje.
+        Doplněním odst. 4 do tohoto ustanovení byl pouze potvrzen původní záměr, aby tyto
+        lhůty byly platné pro všechny poplatníky vykazující daňovou ztrátu či pořizující
+        majetek formou finančního leasingu, a nikoliv pouze pro poplatníky čerpající investiční
+        pobídky, jak bylo z původního znění tohoto ustanovení dovozováno. <strong>Pokud však
+          poplatník nepatří mezi výše uvedené poplatníky, tedy pokud nedostal investiční pobídku,
+          nevykázal daňovou ztrátu ani nepořídil majetek formou finančního leasingu, tato
+          prodloužená lhůta se ho netýká</strong>.
+      </p>
+      <p><a href="http://www.archivovani.cz/skartacni-lhuty">Skartační lhůty</a></p>
+      <br />
+      <p><strong>V souladu se <%= link_to "zákonem o účetnictví", "https://www.podnikatel.cz/zakony/zakon-c-563-1991-sb-o-ucetnictvi/" %> je možné archivovat: </p>
+      </strong>
+      <ul>
+        <li><strong>v listinné podobě</strong> – papírový účetní záznam pořízený rukopisem, psacím strojem, tiskařskými nebo reprografickými technikami anebo počítačová tisková sestava.</li>
+        <li><strong>v technické podobě</strong> – účetní záznam provedený elektronickým, optickým nebo jiným způsobem, který umožňuje jeho převedení do čitelné formy, např. archivace na CD.</li>
+      </ul>
+      <p><strong>Po skončení účetního období se archivuje:</p>
+      </strong>
+      <ul>
+        <li>účetní závěrka, výroční zpráva – <strong>10 let</strong></li>
+        <li>účetní doklady, účetní knihy, odpisové plány, inventurní soupisy, účtový rozvrh, přehledy – <strong>5 let</strong></li>
+        <li>účetní záznamy, kterými účetní jednotky dokládají vedení účetnictví – <strong>5 let</strong></li>
+      </ul>
+      <p>Dokumenty z personalistiky se archivují od roku, který následuje po roce, kterého se dokumenty týkají:</p>
+      <ul>
+        <li>stejnopisy evidenčních listů – 3 roky</li>
+        <li>mzdové listy, účetní záznamy o údajích potřebných pro účely důchodového pojištění – 30 let (u starobního důchodu pouze 10 let)</li>
+        <li>u obchodní společnosti (a obdobně i družstva) seznam společníků, členů statutárního orgánu, dozorčí rady a přehled, kdy tato společnost neodvedla pojistné na sociální zabezpečení a příspěvek na státní politiku zaměstnanosti – 6 let (3 roky po zaplacení dlužného pojistného)</li>
+      </ul>
+      <p>Podnikatelé – <strong>plátci daně z přidané hodnoty</strong> archivují:</p>
+      <ul>
+        <li>daňové doklady – <strong>10</strong> let od konce zdaňovacího období.</li>
+      </ul>
+    </div>
+    <% i+=1%>
+    <h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci bez náhrady mzdy podle nařízení vlády číslo 590/2006 Sb.</a></h2>
+    <div class="content">
+      <span>Vyšetření nebo ošetření</span>
+      <ul>
+        <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu nepřísluší za dobu přesahující dobu, za kterou by vyšetření bylo provedeno v nejbližším zdravotnickém zařízení.</li>
+        <li>které bylo možné provést mimo pracovní dobu.</li>
+      </ul>
+      <span>Přerušení dopravního provozu nebo zpoždění hromadných dopravních prostředků</span>
+      <ul>
+        <li>nemohl-li zaměstnanec dosáhnout včas místa pracoviště jiným přiměřeným způsobem.</li>
+      </ul>
+      <span>Svatba</span>
+      <ul>
+        <li>v případě poskytnutí pracovního volna na 2 dny na vlastní svatbu, za 1 den z těchto 2 dnů náhrada mzdy nepřísluší.</li>
+        <li>1 den dítěti při svatbě rodičů.</li>
+      </ul>
+      <span>Narození dítěte</span>
+      <ul>
+        <li>účast při porodu manželky (družky).</li>
+      </ul>
+      <span>Přestěhování</span>
+      <ul>
+        <li>na nezbytně nutnou dobu, nejvýše na 2 dny, při přestěhování zaměstnance, který má vlastní bytové zařízení.</li>
+      </ul>
+      <span>Vyhledání nového zaměstnání</span>
+      <ul>
+        <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu odpovídající výpovědní době v délce 2 měsíců.</li>
+      </ul>
+      <span>Doprovod</span>
+      <ul>
+        <li>doprovod rodinných příslušníků, mimo manžela, druha, dítěte, rodiče a prarodiče zaměstnance nebo jeho manžela, do zdravotnického zařízení k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení.</li>
+        <li>doprovod dítěte do školského poradenského zařízení je zjištění speciálních vzdělávacích potřeb dítěte.</li>
+      </ul>
+    </div>
+    <% i+=1%>
+    <h2 id="<%= i %>"><a class="link">Jiné důležité osobní překážky v práci s náhradou mzdy</a></h2>
+    <div class="content">
+      <span>Vyšetření nebo ošetření</span><br>
+      na nezbytně nutnou dobu, bylo-li vyšetření nebo ošetření provedeno ve zdravotnickém zařízení, které je ve smluvním vztahu ke zdravotní pojišťovně, kterou si zaměstnanec zvolil, a které je <strong>nejblíže </strong>bydlišti nebo pracovišti zaměstnance a je schopné potřebnou zdravotní péči poskytnout, pokud vyšetření nebo ošetření nebylo možné provést <strong>mimo pracovní dobu</strong>.
+      <ul>
+        <li>bylo-li provedeno v jiném než nejbližším zdravotnickém zařízení, poskytne se pracovní volno na nezbytně nutnou dobu; náhrada mzdy nebo platu však přísluší nejvýše za dobu podle předchozího odstavce.</li>
+      </ul>
+      <span>Pracovnělékařská prohlídka, vyšetření nebo očkování související s výkonem práce</span>
+      <ul>
+        <li>na nezbytně nutnou dobu v rozsahu stanoveném zvláštními právními předpisy nebo rozhodnutím příslušného orgánu ochrany veřejného zdraví.</li>
+      </ul>
+      <span>Znemožnění cesty do zaměstnání</span>
+      <ul>
+        <li>na nezbytně nutnou dobu, nejvýše na 1 den, z povětrnostních důvodů nehromadným dopravním prostředkem, který používá těžce zdravotně postižený zaměstnanec.</li>
+      </ul>
+      <span>Svatba</span>
+      <ul>
+        <li>pracovní volno se poskytne na 2 dny na vlastní svatbu, z toho 1 den k účasti na svatebním obřadu; náhrada mzdy nebo platu přísluší však pouze za 1 den z těchto dnů.</li>
+        <li>rodiči na 1 den k účasti na svatbě dítěte</li>
+      </ul>
+      <span>Narození dítěte</span>
+      <ul>
+        <li>na nezbytně nutnou dobu <strong>k převozu manželky</strong> (družky) do zdravotnického zařízení a zpět.</li>
+      </ul>
+      <span>Úmrtí</span>
+      <ul>
+        <li><strong>2 dny při úmrtí</strong> manžela, druha nebo dítěte a na<strong> další den k účasti na pohřbu</strong> těchto osob,</li>
+        <li><strong>1 den k účasti na pohřbu</strong> rodiče a sourozence zaměstnance, rodiče a sourozence jeho manžela, jakož i manžela dítěte nebo manžela sourozence zaměstnance a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob,</li>
+        <li>na nezbytně nutnou dobu, nejvýše na 1 den, k účasti na pohřbu prarodiče nebo vnuka zaměstnance nebo prarodiče jeho manžela nebo jiné osoby, která sice nepatří k uvedeným fyzickým osobám, ale žila se zaměstnancem v době úmrtí v domácnosti, a na další den, jestliže zaměstnanec obstarává pohřeb těchto osob.</li>
+      </ul>
+      <span>Doprovod</span>
+      <ul>
+        <li>manžela, druha nebo dítěte, jakož i rodiče a prarodiče zaměstnance <strong>do zdravotnického zařízení</strong> k vyšetření nebo ošetření při náhlém onemocnění nebo úrazu a k předem stanovenému vyšetření, ošetření nebo léčení se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 1 den, byl-li doprovod nezbytný a uvedené úkony nebylo možno provést mimo pracovní dobu,</li>
+        <li>zdravotně postiženého dítěte do zařízení sociálních služeb nebo do školy nebo školského zařízení samostatně zřízených pro žáky se zdravotním postižením s internátním provozem a zpět se poskytne jen jednomu z rodinných příslušníků na nezbytně nutnou dobu, nejvýše však na 6 pracovních dnů v kalendářním roce.</li>
+      </ul>
+      <span>Pohřeb spoluzaměstnance</span>
+      <ul>
+        <li>na nezbytně nutnou dobu zaměstnancům, kteří se zúčastní pohřbu spoluzaměstnance; tyto zaměstnance určí zaměstnavatel nebo zaměstnavatel v dohodě s odborovou organizací.</li>
+      </ul>
+      <span>Přestěhování</span>
+      <ul>
+        <li>na nezbytně nutnou dobu, nejvýše na 2 dny, jde-li o přestěhování v zájmu zaměstnavatele.</li>
+      </ul>
+      <span>Vyhledání nového zaměstnání</span>
+      <ul>
+        <li>na nezbytně nutnou dobu, nejvýše na 1 půlden v týdnu, po dobu před skončením pracovního poměru výpovědí danou zaměstnavatelem z důvodů uvedených v § 52 písm. a) až e) zákoníku práce, nebo dohodou z týchž důvodů. Pracovní volno je možné se souhlasem zaměstnavatele slučovat.</li>
+      </ul>
+    </div>
   </article>
 </section>
