@@ -1,11 +1,9 @@
-class Contact < ActiveRecord::Base
-  has_no_table
-  
-  
-  column :name, :string
-  column :email, :string
-  column :message, :string
-  
-  validates_presence_of :name
+class Contact
+  attr_accessor :name, :email, :message
 
+  def initialize(name, email, message)
+    @name = name
+    @email = email
+    @message = message
+  end
 end

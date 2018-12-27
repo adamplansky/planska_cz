@@ -5,7 +5,7 @@
   <article>
 	  <section class="col-sm-6">
       <h4>Zašlete mi zprávu</h4>
-      <%= form_for @contact do |f| %>
+      <%= form_for :contact, url: contacts_path do |f| %>
       <div class="form-group">
          <%= f.label :name, "Vaše jméno:" %>
 
@@ -15,27 +15,27 @@
           <%= f.label :email, "Váš email:" %>
           <%= f.text_field :email, class: "form-control" %>
         </div>
-       
+
        <div class="form-group">
           <%= f.label :message, "Vaše zpráva:" %>
           <%= f.text_field :message, class: "form-control" %>
         </div>
-       
+
         <%= f.submit "odeslat", class: "btn btn-default" %>
       <% end %>
-    
-    
+
+
     </section>
 	  <section class="col-sm-6 contact">
       <h4>Kontaktní informace</h4>
       <div>Máte-li zájem o mé služby či jakýkoli dotaz, neváhejte mne kontaktovat prostřednictvím kontaktního formuláře, či na níže uvedených kontaktech.</div>
-      
+
       <div>
         <ul>
 
           <li><strong style="color: #465A7A; font-weight:800;">Slatina 30, 273 26 Slatina, okres Kladno</strong></li>
           <li><a href="http://mapy.cz/s/evxl" style="font-weight:400; color:#7B7B7B; text-decoration:underline">zobrazit na mapě</a></li>
-          <li>IČ 45854416, DIČ CZ7155120676</li>  
+          <li>IČ 45854416, DIČ CZ7155120676</li>
           <li>+420 606 419 246</li>
           <li><%= mail_to "jitka@planska.cz"%></li>
           <li><%= link_to "www.planska.cz", "http://www.planska.cz/"%></li>

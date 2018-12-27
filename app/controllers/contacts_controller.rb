@@ -1,13 +1,12 @@
 # Contacts Controller
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new
   end
 
   def create
-    @contact = Contact.new(secure_params)
-    puts @contact.inspect
-    if @contact.valid?
+    pp params
+    @contact = Contact.new(params["contact"]["name"], params["contact"]["email"], params["contact"]["message"])
+    if @contact
       UserMailer.ask_email(@contact).deliver
       flash[:notice] = 'Zpráva odeslána!'
       redirect_to controller: 'contacts', action: 'new'
@@ -17,7 +16,4 @@ class ContactsController < ApplicationController
     end
   end
 
-  def secure_params
-    params.require(:contact).permit(:name, :email, :message)
-  end
 end
