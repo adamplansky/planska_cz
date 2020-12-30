@@ -15,7 +15,7 @@ gem 'bootstrap-sass'
 gem 'high_voltage'
 # gem "activerecord-tableless", "~> 1.0"
 gem 'sitemap_generator'
-gem "nokogiri", "~> 1.8.1"
+gem "nokogiri", "~> 1.10.10"
 gem 'rack-timeout'
 gem 'puma'
 gem 'pg', '~> 0.18.4'
